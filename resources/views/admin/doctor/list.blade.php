@@ -11,7 +11,7 @@
                     <h1>Doctors</h1>
                 </div>
                 <div class="col-sm-6 text-right">
-                    <a href="{{ url('admin/doctors/create') }}" class="btn btn-primary">New Doctor</a>
+                    <a href="{{ url('admin/doctors/create') }}" class="btn btn-primary" style="background-color:rgb(0, 141, 122); color:white;">New Doctor</a>
                 </div>
             </div>
         </div>

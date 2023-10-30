@@ -72,7 +72,7 @@ class DoctorController extends Controller
                 $dPath = public_path() .'/uploads/doctor/thumb/'.$newImageName;
                 $img = Image::make($sPath);
                 // $img->resize(300, 200);
-                $img->fit(75, 105, function ($constraint) {
+                $img->fit(350, 550, function ($constraint) {
                     $constraint->upsize();
                 });
                 $img->save($dPath);
@@ -169,7 +169,7 @@ class DoctorController extends Controller
                 $dPath = public_path() . '/uploads/doctor/thumb/' . $newImageName;
                 $img = Image::make($sPath);
                 // $img->resize(300, 200);
-                $img->fit(75, 105, function ($constraint) {
+                $img->fit(350, 550, function ($constraint) {
                     $constraint->upsize();
                 });
                 $img->save($dPath);

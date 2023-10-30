@@ -1,4 +1,6 @@
 <?php
+
+use App\Http\Controllers\Admin\AppoinmentController as AdminAppoinmentController;
 use Illuminate\Support\Facades\Route;
 
 use Illuminate\Http\Request;
@@ -12,6 +14,8 @@ use App\Http\Controllers\Admin\DoctorController;
 use App\Http\Controllers\Admin\DoctorImageController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\ProductImageController;
+use App\Http\Controllers\Frontend\AppoinmentController;
+use App\Http\Controllers\Frontend\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +31,20 @@ use App\Http\Controllers\Admin\ProductImageController;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+
+
+
+
+
+// Frontend Route
+
+Route::get('/',[HomeController::class,'index'])->name('front.home');
+Route::post('/',[AppoinmentController::class,'postAppoinment'])->name('home.appoinment');
+
+
+
+
+
 
 
 //admin routes
@@ -110,6 +128,12 @@ Route::group(['prefix'=>'admin'],function(){
         Route::get('/contact',[AdminContactController::class,'index'])->name('contactapplication');
         Route::put('/contact/{id}',[AdminContactController::class,'update'])->name('contactapplication.update');
         Route::get('/contact/{id}',[AdminContactController::class,'show'])->name('contactapplication.id');
+
+
+        // appoinments
+        Route::get('/appoinments',[AdminAppoinmentController::class,'index'])->name('appoinments');
+        Route::put('/appoinment/{id}',[AdminAppoinmentController::class,'update'])->name('appoinments.update');
+        Route::get('/appoinment/{id}',[AdminAppoinmentController::class,'show'])->name('appoinments.id');
 
 
 
