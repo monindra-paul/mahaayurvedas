@@ -745,11 +745,13 @@ select {
 }
 
 .btn.style2:before {
-  background: linear-gradient(90deg, #A8DC51 0%, #4CA754 99.88%);
+  background: linear-gradient(90deg, #f75f05 0%, #f75f05 99.88%);
+  border-radius: 5px;
 }
 
 .btn.style2:after {
-  background: linear-gradient(-90deg, #A8DC51 0%, #4CA754 99.88%);
+  background: linear-gradient(-90deg, #2F6246 0%, #4CA754 99.88%);
+  border-radius: 5px;
 }
 
 .btn.style3 {
@@ -2048,6 +2050,7 @@ select {
   z-index: 99;
   transition: 0.4s;
   background-color: #ffffff;
+  padding-top: 5px;
 }
 
 .header-wrap.sticky {
@@ -2438,7 +2441,7 @@ select {
     justify-content: flex-end;
     text-align: right;
     position: relative;
-    top: 4px;
+    top: -10px;
   }
 
   .mobile-bar-wrap .shopcart-btn {
@@ -5118,7 +5121,7 @@ select {
   width: 210px;
   text-align: center;
   z-index: 10;
-  background: rgba(2, 78, 50, 0.25);
+  background: #f75f05;
   padding: 15px;
   border-radius: 8px;
   overflow: hidden;

@@ -121,14 +121,22 @@
         var phone = "+91{{$appoinments->mobile}}";
         var name = "{{$appoinments->name}}";
         var age = "{{$appoinments->age}}";
+        var email = "{{$appoinments->email}}";
+        var address = "{{$appoinments->address}}";
+        var date = "{{$appoinments->date}}";
+       
 
-        var name = document.getElementById('name').value;
-        var age = document.getElementById('age').value;
+        // var name = document.getElementById('name').value;
+        // var age = document.getElementById('age').value;
 
         var url = "https://wa.me/" + phone + "?text="
 
         +"*Name :* " +name+"%0a"
-        +"*Age :* " +age+"%0a";
+        +"*Age :* " +age+"%0a"
+        +"*Email :* " +email+"%0a"
+        +"*Address :* " +address+"%0a"
+        +"*Date :* " +date+"%0a";
+       
 
         window.open(url, '_blank').focus();
     }

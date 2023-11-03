@@ -164,13 +164,23 @@
             </div>
         </div>
         <div class="cat-slider-one owl-carousel">
+
+            @if(!empty($lim_cats))
+            @foreach ($lim_cats as $lim_cat)
             <div class="cat-card">
+                @if(!empty($lim_cat->image !=""))               
                 <div class="cat-img">
-                    <img src="assets/img/category/cat-1.jpg" alt="Image">
+                    <img src="{{asset('uploads/category/thumb/'. $lim_cat->image)}}" alt="Image">
                 </div>
-                <a class="cat-info" href="shop-right-sidebar.html">Flowers</a>
+               
+                @endif
+                <a class="cat-info" href="shop-right-sidebar.html">{{$lim_cat->name}}</a>
             </div>
-            <div class="cat-card">
+            @endforeach
+            @endif
+            
+
+            {{-- <div class="cat-card">
                 <div class="cat-img">
                     <img src="assets/img/category/cat-2.jpg" alt="Image">
                 </div>
@@ -193,7 +203,7 @@
                     <img src="assets/img/category/cat-5.jpg" alt="Image">
                 </div>
                    <a class="cat-info" href="shop-right-sidebar.html">CBD Capsule</a>
-            </div>
+            </div> --}}
         </div>
     </div>
 </section>
@@ -373,7 +383,7 @@
            <div class="col-md-8">
                <div class="section-title style1">
                     <span><img src="assets/img/section-img.png" alt="Image">Our Shop</span>
-                    <h2>Buy Cannabies</h2>
+                    <h2>Our Products</h2>
                </div>
            </div>
            <div class="col-md-4 text-md-end sm-none">
@@ -381,78 +391,33 @@
            </div>
        </div>
        <div class="row justify-content-center">
-            <div class="col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
-                    <div class="product-card style2">
-                        <div class="product-img">
-                            <img src="assets/img/product/product-1.jpg" alt="Image">
-                            <button type="button" class="btn style2 add-cart">Add To Cart</button>
-                        </div>
-                        <div class="product-info">
-                            <h3><a href="shop-details.html">Cannabis Oil</a></h3>
-                            <p class="price">$89.00 <span class="discount">$120.00</span></p>
-                        </div>
-                    </div>
+
+            <div class="col-xl-3 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+                    @if($products->isNotEmpty())
+                        @foreach($products as $product)
+                              @php
+                              $productImage = $product->product_images->first();
+                              @endphp
+                            <div class="product-card style2">
+                                @if(!empty($productImage->image))
+                                <div class="product-img">
+                                    <img src="{{asset('uploads/product/small/'.$productImage->image)}}" alt="Image">
+                                    <button type="button" class="btn style2 add-cart">Reach Us</button>
+                                </div>
+                                @endif
+                                <div class="product-info">
+                                    <h3><a href="shop-details.html">{{$product->title}}</a></h3>
+                                    <p class="price"> ₹ {{$product->price}} 
+                                        @if($product->compare_price > 0)
+                                        <span class="discount">₹ {{$product->compare_price}}</span>
+                                        @endif
+                                    </p>
+                                </div>
+                            </div>
+                        @endforeach
+                    @endif
             </div>
-            <div class="col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
-                    <div class="product-card style2">
-                        <div class="product-img">
-                            <img src="assets/img/product/product-2.jpg" alt="Image">
-                            <button type="button" class="btn style2 add-cart">Add To Cart</button>
-                        </div>
-                        <div class="product-info">
-                            <h3><a href="shop-details.html">Critical Kush</a></h3>
-                            <p class="price">$89.00</p>
-                        </div>
-                    </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
-                <div class="product-card style2">
-                    <div class="product-img">
-                        <img src="assets/img/product/product-3.jpg" alt="Image">
-                        <button type="button" class="btn style2 add-cart">Add To Cart</button>
-                    </div>
-                    <div class="product-info">
-                        <h3><a href="shop-details.html">Elphabes Bliss</a></h3>
-                        <p class="price">$79.00 <span class="discount">$80.00</span></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500">
-                <div class="product-card style2">
-                    <div class="product-img">
-                        <img src="assets/img/product/product-4.jpg" alt="Image">
-                        <button type="button" class="btn style2 add-cart">Add To Cart</button>
-                    </div>
-                    <div class="product-info">
-                        <h3><a href="shop-details.html">Marley Black Indica</a></h3>
-                        <p class="price">$52.00 <span class="discount">$80.00</span></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
-                <div class="product-card style2">
-                    <div class="product-img">
-                        <img src="assets/img/product/product-5.jpg" alt="Image">
-                        <button type="button" class="btn style2 add-cart">Add To Cart</button>
-                    </div>
-                    <div class="product-info">
-                        <h3><a href="shop-details.html">Sour Alien OG</a></h3>
-                        <p class="price">$109.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="700">
-                <div class="product-card style2">
-                    <div class="product-img">
-                        <img src="assets/img/product/product-6.jpg" alt="Image">
-                        <button type="button" class="btn style2 add-cart">Add To Cart</button>
-                    </div>
-                    <div class="product-info">
-                        <h3><a href="shop-details.html">Sour Alien OG</a></h3>
-                        <p class="price">$89.00 <span class="discount">$120.00</span></p>
-                    </div>
-                </div>
-            </div>
+           
        </div>
        <div class="text-center d-md-none">
            <a href="shop-right-sidebar.html" class="btn style2">View All Products</a>
@@ -571,11 +536,11 @@
                         </div>
 
                        
+                        @if ($errors->has('doctor'))
+                        <span class="text-danger">{{ $errors->first('doctor') }}</span>
+                        @endif                            
                         <div class="form-group">
-                            @if ($errors->has('doctor'))
-                            <span class="text-danger">{{ $errors->first('doctor') }}</span>
-                            @endif                            
-                            <select class="form-select form-select-sm" name="doctor" id="doctor" aria-label=".form-select-sm example">
+                            <select class="form-select form-select-md" name="doctor" id="doctor" aria-label=".form-select-sm example">
                                     <option selected>Select Doctor</option>
                                     @if(!empty($doctors))
                                     @foreach($doctors as $doctor)
@@ -599,13 +564,20 @@
                             <input type="text" name="age" id="age" placeholder="Age">
                         </div>
 
-                       
+                        @if ($errors->has('date'))
+                        <span class="text-danger">{{ $errors->first('date') }}</span>
+                        @endif
                         <div class="form-group">
-                            <input type="datetime-local" name="date" id="date" placeholder="Age">
+                            <input type="datetime-local" name="date" id="date" placeholder="Date & Time">
                         </div>
+
+                        @if ($errors->has('address'))
+                        <span class="text-danger">{{ $errors->first('address') }}</span>
+                        @endif
                         <div class="form-group">
                             <input type="text" name="address" id="address" placeholder="Address">
                         </div>
+
                         <div class="form-group">
                             <input type="text" name="message" id="message" placeholder="Subject">
                         </div>
@@ -613,7 +585,7 @@
                             @if(session('success'))
                             <div class="alert alert-success">{{session('success')}}</div>
                             @endif
-                            <button type="submit" class="btn style1 w-100 d-block">Submit Application</button>
+                            <button type="submit" class="btn style1 w-100 d-block">Book Appointment</button>
                         </div>
                     </form>
                 </div>
@@ -631,198 +603,32 @@
         <div class="row">
             <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
                 <div class="section-title style1 text-center mb-40">
-                    <span><img src="assets/img/section-img.png" alt="Image">Meet Our Team</span>
-                    <h2>Led By Passionate Experts</h2>
+                    <span><img src="assets/img/section-img.png" alt="Image">Meet Our Doctors</span>
+                    <h2>Led By Experienced Doctors</h2>
                 </div>
             </div>
         </div>
         <div class="team-slider-one owl-carousel">
+            @if(!empty($doctors))
+            @foreach($doctors as $doctor)
             <div class="team-card style1">
+                @if($doctor->image !="")
                 <div class="team-img">
-                    <img src="assets/img/team/team-1.jpg" alt="Image">
+                    <img src="{{asset('uploads/doctor/'. $doctor->image)}}" alt="Image">
                     <ul class="social-profile list-style style1">
-                        <li>
-                            <a target="_blank" href="https://facebook.com">
-                                <i class="ri-facebook-fill"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://twitter.com">
-                                <i class="ri-twitter-fill"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://linkedin.com">
-                                <i class="ri-linkedin-fill"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://instagram.com">
-                                <i class="ri-instagram-line"></i>
-                            </a>
-                        </li>
-                    </ul>
+                        <a href="{{ route('index.appoinment', ['doctor' => $doctor->name]) }}" class="btn m-0 p-0">Book Now</a>
+                    </ul>                   
                 </div>
+                @endif
                 <div class="team-info">
-                    <h3><a href="author-details.html">Sally Welchar</a></h3>
-                    <span>Senior Physician</span>
+                    <h3><a href="author-details.html">{{$doctor->name}}</a></h3>
+                    <span>{{$doctor->designation}}</span>
                 </div>
             </div>
-            <div class="team-card style1">
-                <div class="team-img">
-                    <img src="assets/img/team/team-2.jpg" alt="Image">
-                    <ul class="social-profile list-style style1">
-                        <li>
-                            <a target="_blank" href="https://facebook.com">
-                                <i class="ri-facebook-fill"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://twitter.com">
-                                <i class="ri-twitter-fill"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://linkedin.com">
-                                <i class="ri-linkedin-fill"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://instagram.com">
-                                <i class="ri-instagram-line"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="team-info">
-                    <h3><a href="author-details.html">Jesse Joslin</a></h3>
-                    <span>Cardiac Specialist</span>
-                </div>
-            </div>
-            <div class="team-card style1">
-                <div class="team-img">
-                    <img src="assets/img/team/team-3.jpg" alt="Image">
-                    <ul class="social-profile list-style style1">
-                        <li>
-                            <a target="_blank" href="https://facebook.com">
-                                <i class="ri-facebook-fill"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://twitter.com">
-                                <i class="ri-twitter-fill"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://linkedin.com">
-                                <i class="ri-linkedin-fill"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://instagram.com">
-                                <i class="ri-instagram-line"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="team-info">
-                    <h3><a href="author-details.html">Lucifer Jhones</a></h3>
-                    <span>Medicine Specialist</span>
-                </div>
-            </div>
-            <div class="team-card style1">
-                <div class="team-img">
-                    <img src="assets/img/team/team-4.jpg" alt="Image">
-                    <ul class="social-profile list-style style1">
-                        <li>
-                            <a target="_blank" href="https://facebook.com">
-                                <i class="ri-facebook-fill"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://twitter.com">
-                                <i class="ri-twitter-fill"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://linkedin.com">
-                                <i class="ri-linkedin-fill"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://instagram.com">
-                                <i class="ri-instagram-line"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="team-info">
-                    <h3><a href="author-details.html">Jonquil Von</a></h3>
-                    <span>General Physician</span>
-                </div>
-            </div>
-            <div class="team-card style1">
-                <div class="team-img">
-                    <img src="assets/img/team/team-5.jpg" alt="Image">
-                    <ul class="social-profile list-style style1">
-                        <li>
-                            <a target="_blank" href="https://facebook.com">
-                                <i class="ri-facebook-fill"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://twitter.com">
-                                <i class="ri-twitter-fill"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://linkedin.com">
-                                <i class="ri-linkedin-fill"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://instagram.com">
-                                <i class="ri-instagram-line"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="team-info">
-                    <h3><a href="author-details.html">Richard Archer</a></h3>
-                    <span>Sergeon</span>
-                </div>
-            </div>
-            <div class="team-card style1">
-                <div class="team-img">
-                    <img src="assets/img/team/team-6.jpg" alt="Image">
-                    <ul class="social-profile list-style style1">
-                        <li>
-                            <a target="_blank" href="https://facebook.com">
-                                <i class="ri-facebook-fill"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://twitter.com">
-                                <i class="ri-twitter-fill"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://linkedin.com">
-                                <i class="ri-linkedin-fill"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://instagram.com">
-                                <i class="ri-instagram-line"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="team-info">
-                    <h3><a href="author-details.html">Carol Owenes</a></h3>
-                    <span>Medicine Specialist</span>
-                </div>
-            </div>
+            @endforeach
+            @endif
+            
+            
         </div>
     </div>
 </section>

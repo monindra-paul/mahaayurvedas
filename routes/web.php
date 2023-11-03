@@ -17,6 +17,8 @@ use App\Http\Controllers\Admin\ProductImageController;
 use App\Http\Controllers\Frontend\AboutController;
 use App\Http\Controllers\Frontend\AppoinmentController;
 use App\Http\Controllers\Frontend\HomeController;
+use App\Http\Controllers\Frontend\ShopController;
+use App\Http\Controllers\Frontend\SpecialityController;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,13 +42,18 @@ use App\Http\Controllers\Frontend\HomeController;
 // Frontend Route
 
 Route::get('/',[HomeController::class,'index'])->name('front.home');
-
-
 Route::post('/',[AppoinmentController::class,'postAppoinment'])->name('home.appoinment');
-Route::get('/book-appoinment',[AppoinmentController::class,'index'])->name('index.appoinment');
+
+Route::get('/book-appointment',[AppoinmentController::class,'index'])->name('index.appoinment');
+Route::post('/book-appointment',[AppoinmentController::class,'postAppoinment'])->name('post.appoinment');
 
 
 Route::get('/about-us',[AboutController::class,'about'])->name('front.about');
+
+Route::get('/speciality',[SpecialityController::class,'speciality'])->name('front.speciality');
+
+Route::get('/shop/{categorySlug?}',[ShopController::class,'index'])->name('front.shop');
+Route::get('/product/{slug}',[ShopController::class,'product'])->name('front.product');
 
 
 

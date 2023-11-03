@@ -6,18 +6,18 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Link of CSS files -->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/flaticon.css">
-        <link rel="stylesheet" href="assets/css/remixicon.css">
-        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-        <link rel="stylesheet" href="assets/css/swiper-min.css">
-        <link rel="stylesheet" href="assets/css/fancybox.css">
-        <link rel="stylesheet" href="assets/css/jquery-ui-min.css">
-        <link rel="stylesheet" href="assets/css/odometer.min.css">
-        <link rel="stylesheet" href="assets/css/aos.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/responsive.css">
-        <link rel="stylesheet" href="assets/css/dark-theme.css">
+        <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/css/flaticon.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/css/remixicon.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/css/owl.carousel.min.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/css/swiper-min.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/css/fancybox.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/css/jquery-ui-min.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/css/odometer.min.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/css/aos.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/css/responsive.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/css/dark-theme.css')}}">
         <title>Maha Ayurvedas | The exceptional ayurveda platform for everyone</title>
         <link rel="icon" type="image/png" href="{{asset('assets/img/ayurved/maha-512.png')}}">
     </head>
@@ -26,7 +26,7 @@
 
          <!--Preloader starts-->
          <div class="preloader js-preloader">
-            <img src="assets/img/preloader.gif" alt="Image">
+            <img src="{{asset('assets/img/preloader.gif')}}" alt="Image">
         </div>
         <!--Preloader ends-->
 
@@ -43,20 +43,20 @@
         <!-- Back-to-top button End -->
 
          <!-- Link of JS files -->
-         <script src="assets/js/jquery.min.js"></script>
-         <script src="assets/js/bootstrap.bundle.min.js"></script>
-         <script src="assets/js/form-validator.min.js"></script>
-         <script src="assets/js/contact-form-script.js"></script>
-         <script src="assets/js/aos.js"></script>
-         <script src="assets/js/owl.carousel.min.js"></script>
-         <script src="assets/js/swiper-min.js"></script>
-         <script src="assets/js/jquery-ui-min.js"></script>
-         <script src="assets/js/odometer.min.js"></script>
-         <script src="assets/js/jquery.countdown.min.js"></script>
-         <script src="assets/js/fancybox.js"></script>
-         <script src="assets/js/jquery.appear.js"></script>
-         <script src="assets/js/tweenmax.min.js"></script>
-         <script src="assets/js/main.js"></script>
+         <script src="{{asset('assets/js/jquery.min.js')}}"></script>
+         <script src="{{asset('assets/js/bootstrap.bundle.min.js')}}"></script>
+         <script src="{{asset('assets/js/form-validator.min.js')}}"></script>
+         <script src="{{asset('assets/js/contact-form-script.js')}}"></script>
+         <script src="{{asset('assets/js/aos.js')}}"></script>
+         <script src="{{asset('assets/js/owl.carousel.min.js')}}"></script>
+         <script src="{{asset('assets/js/swiper-min.js')}}"></script>
+         <script src="{{asset('assets/js/jquery-ui-min.js')}}"></script>
+         <script src="{{asset('assets/js/odometer.min.js')}}"></script>
+         <script src="{{asset('assets/js/jquery.countdown.min.js')}}"></script>
+         <script src="{{asset('assets/js/fancybox.js')}}"></script>
+         <script src="{{asset('assets/js/jquery.appear.js')}}"></script>
+         <script src="{{asset('assets/js/tweenmax.min.js')}}"></script>
+         <script src="{{asset('assets/js/main.js')}}"></script>
      </body>
  
  </html>

@@ -218,25 +218,28 @@
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link">
+                                            <a href="{{url('/speciality')}}" class="nav-link">
                                                 Speciality                                               
                                             </a>                                            
                                         </li>
                                        
-                                        {{-- <li class="nav-item">
-                                            <a href="{{url('/book-appoinment')}}" class="nav-link">
-                                                Book Appoinment                                                
+                                        <li class="nav-item">
+                                            <a href="{{url('/shop')}}" class="nav-link">
+                                                Products                                                
                                             </a>                                            
-                                        </li> --}}
+                                        </li>
                                         
                                         <li class="nav-item">
                                             <a href="contact.html" class="nav-link">Contact</a>
+                                        </li>
+                                        <li class="nav-item d-lg-none">
+                                            <a href="login.html" class="btn style1 w-block w-100">Book An Appointment</a>
                                         </li>
                                        
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-lg-2 m-0 p-0">
+                            <div class="col-lg-2">
                                 <a class="navbar-brand" href="{{url('/')}}">
                                     <img class="logo-light" src="{{asset('assets/img/ayurved/maha-ayurvedas.png')}}" alt="logo">
                                     <!-- <img class="logo-dark" src="assets/img/logo-white.png" alt="logo"> -->
@@ -251,7 +254,7 @@
                                         <a class="shopcart-btn" href="cart.html"><i class="flaticon-bag"></i> <span>10</span></a>
                                     </div> --}}
                                     <div class="option-item">
-                                        <a href="{{url('/book-appoinment')}}" class="btn style1">Book an Appoinment</a>
+                                        <a href="{{url('/book-appointment')}}" class="btn style1">Book an Appointment</a>
                                     </div>
                                     {{-- <div class="search-area">
                                         <input type="search" placeholder="Search Here..">
@@ -262,15 +265,15 @@
                         </div>
                     </nav>
                     <div class="mobile-bar-wrap d-lg-none">
-                        <button class="searchbtn"><i class="ri-search-line"></i></button>
-                        <a class="shopcart-btn" href="cart.html"><i class="flaticon-bag"></i> <span>10</span></a>
+                        {{-- <button class="searchbtn"><i class="ri-search-line"></i></button> --}}
+                        {{-- <a class="shopcart-btn" href="cart.html"><i class="flaticon-bag"></i> <span>10</span></a> --}}
                         <div class="mobile-menu d-lg-none">
                             <a href="javascript:void(0)"><i class="ri-menu-line"></i></a>
                         </div>
-                        <div class="search-area">
+                        {{-- <div class="search-area">
                             <input type="search" placeholder="Search Here..">
                             <button type="submit"><i class="ri-search-line"></i></button>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </header>  

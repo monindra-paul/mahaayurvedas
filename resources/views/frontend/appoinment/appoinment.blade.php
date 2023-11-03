@@ -1,7 +1,22 @@
 @extends('frontend.layout.app')
 @section('content')
 
+
+<!-- Breadcrumb Start -->
+      <div class="breadcrumb-wrap bg-f br-1 mt-5 pt-5">
+        <div class="container">
+            <div class="breadcrumb-title">
+                <h2>About</h2>
+                <ul class="breadcrumb-menu list-style">
+                    <li><a href="index.html">Home </a></li>
+                    <li>About</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
 <div class="cta-wrap pt-100 pb-75">
+    
     <div class="cta-shape">
         <img src="assets/img/counter-shape-1.png" alt="Image">
     </div>
@@ -77,13 +92,13 @@
                             @if ($errors->has('doctor'))
                             <span class="text-danger">{{ $errors->first('doctor') }}</span>
                             @endif                            
-                            <select class="form-select form-select-sm" name="doctor" id="doctor" aria-label=".form-select-sm example">
-                                    <option selected>Select Doctor</option>
-                                    @if(!empty($doctors))
-                                    @foreach($doctors as $doctor)
-                                        <option value="{{$doctor->name}}">{{$doctor->name}}</option>                             
+                            <select class="form-select form-select-md" name="doctor" id="doctor" aria-label=".form-select-sm example">
+                                <option selected>Select Doctor</option>
+                                 @if(!empty($doctors))
+                                     @foreach($doctors as $doctor)
+                                        <option value="{{$doctor->name}}" @if ($doctor->name) selected @endif>{{$doctor->name}}</option>                             
                                     @endforeach
-                                    @endif
+                                 @endif
                             </select>                            
                         </div>
 
@@ -115,7 +130,7 @@
                             @if(session('success'))
                             <div class="alert alert-success">{{session('success')}}</div>
                             @endif
-                            <button type="submit" class="btn style1 w-100 d-block">Submit Application</button>
+                            <button type="submit" class="btn style1 w-100 d-block">Book Appointment</button>
                         </div>
                     </form>
                 </div>
@@ -170,4 +185,5 @@
     </div>
 </div>
 <!-- CTA Section End -->
+
 @endsection

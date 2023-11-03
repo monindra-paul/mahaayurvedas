@@ -12,7 +12,6 @@ class AppoinmentController extends Controller
 
 
     public function index(){
-
         
         $doctors = Doctor::orderBy('name','DESC')->where('status',1)->get();
 

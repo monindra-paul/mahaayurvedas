@@ -10,7 +10,7 @@
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                 <div class="footer-widget">
                     <a href="index.html" class="footer-logo">
-                        <img src="assets/img/logo-white.png" alt="Image">
+                        <img src="{{asset('assets/img/ayurved/maha-ayurvedas.png')}}" alt="Image" width="250px">
                     </a>
                     <p class="comp-desc">
                         Lorem ipsum dolor sit amet consc tetur adicing elit. Dolor emque dicta molest enim beatae ame consequ atur tempo pretium auctor nam.

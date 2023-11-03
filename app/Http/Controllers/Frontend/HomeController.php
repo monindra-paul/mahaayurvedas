@@ -21,7 +21,7 @@ class HomeController extends Controller
         $data['products'] = $products;
 
 
-       $allProducts =  Product::orderBy('id','DESC')
+        $allProducts =  Product::orderBy('id','DESC')
         ->where('status',1)
         ->take(6)
         ->get();

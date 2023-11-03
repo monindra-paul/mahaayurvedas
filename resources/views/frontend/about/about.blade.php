@@ -120,7 +120,7 @@
                             <p>There are many variations of passages of Lorem Ipsum available, bhe mred aln ine form, by injected humour, or randomised words which don't look even slilievable. If youre going to use a passage of lorem.</p>
                         </div>
                         <div class="progressbar-wrap style2">
-                            <div class="progress-bar" data-percentage="70%">
+                            <div class="progress-bar" data-percentage="72%">
                                 <h4 class="progress-title-holder">
                                     <span class="progress-title">Product Coverage</span>
                                     <span class="progress-number-wrapper">

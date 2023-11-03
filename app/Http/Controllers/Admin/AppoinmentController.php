@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 class AppoinmentController extends Controller
 {
     public function index(){
-        $appoinments = Appionment::all();
+        $appoinments = Appionment::orderBy('id','DESC')->get();
        
         return view('admin.appoinment.index', compact('appoinments'));
     }
