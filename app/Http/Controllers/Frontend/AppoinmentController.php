@@ -9,6 +9,17 @@ use Illuminate\Http\Request;
 
 class AppoinmentController extends Controller
 {
+
+
+    public function index(){
+
+        
+        $doctors = Doctor::orderBy('name','DESC')->where('status',1)->get();
+
+        $data['doctors'] = $doctors;
+        return view('frontend.appoinment.appoinment',$data);
+    }
+
     public function postAppoinment(Request $request){
 
         $request->validate([

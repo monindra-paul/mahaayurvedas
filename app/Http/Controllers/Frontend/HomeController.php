@@ -12,8 +12,6 @@ class HomeController extends Controller
 {
     public function index(){
 
-
-
         $products =  Product::where('is_featured','Yes')
         ->orderBy('id','DESC')
         ->take(8)

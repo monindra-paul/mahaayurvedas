@@ -14,6 +14,7 @@ use App\Http\Controllers\Admin\DoctorController;
 use App\Http\Controllers\Admin\DoctorImageController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\ProductImageController;
+use App\Http\Controllers\Frontend\AboutController;
 use App\Http\Controllers\Frontend\AppoinmentController;
 use App\Http\Controllers\Frontend\HomeController;
 
@@ -39,7 +40,13 @@ use App\Http\Controllers\Frontend\HomeController;
 // Frontend Route
 
 Route::get('/',[HomeController::class,'index'])->name('front.home');
+
+
 Route::post('/',[AppoinmentController::class,'postAppoinment'])->name('home.appoinment');
+Route::get('/book-appoinment',[AppoinmentController::class,'index'])->name('index.appoinment');
+
+
+Route::get('/about-us',[AboutController::class,'about'])->name('front.about');
 
 
 

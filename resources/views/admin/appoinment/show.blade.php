@@ -99,6 +99,10 @@
                     {{-- <button class="btn btn-primary" type="submit">Update</button> --}}
                     <a href="{{ url('admin/appoinments') }}" class="btn btn-outline-dark ml-3">Cancel</a>
                 </div>
+                <div class="pb-5 pt-3">
+                    {{-- <button class="btn btn-primary" type="submit">Update</button> --}}
+                    <button type="button" onclick="sendWp();" class="btn btn-primary ml-3">Go to Whatsapp</button>
+                </div>
             </form>
         </div>
         <!-- /.card -->
@@ -107,3 +111,29 @@
 </div>
 @endsection
 
+
+@section('customJs')
+
+<script>
+
+
+    function sendWp(){
+        var phone = "+91{{$appoinments->mobile}}";
+        var name = "{{$appoinments->name}}";
+        var age = "{{$appoinments->age}}";
+
+        var name = document.getElementById('name').value;
+        var age = document.getElementById('age').value;
+
+        var url = "https://wa.me/" + phone + "?text="
+
+        +"*Name :* " +name+"%0a"
+        +"*Age :* " +age+"%0a";
+
+        window.open(url, '_blank').focus();
+    }
+
+
+</script>
+
+@endsection

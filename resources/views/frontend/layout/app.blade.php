@@ -18,8 +18,8 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
         <link rel="stylesheet" href="assets/css/dark-theme.css">
-        <title>Maha Ayurvedas | </title>
-        <link rel="icon" type="image/png" href="assets/img/ayurved/maha-512.png">
+        <title>Maha Ayurvedas | The exceptional ayurveda platform for everyone</title>
+        <link rel="icon" type="image/png" href="{{asset('assets/img/ayurved/maha-512.png')}}">
     </head>
 
     <body>

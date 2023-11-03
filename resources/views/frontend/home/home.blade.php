@@ -3,7 +3,7 @@
 
 
  <!-- Hero Section Start -->
-<section class="hero-wrap style2">
+{{-- <section class="hero-wrap style2">
     <img src="assets/img/hero/hero-shape-5.png" alt="Image" class="hero-shape-one bounce">
     <img src="assets/img/hero/hero-shape-6.png" alt="Image" class="hero-shape-two moveVertical">
     <img src="assets/img/hero/hero-shape-7.png" alt="Image" class="hero-shape-three animationFramesTwo">
@@ -66,7 +66,89 @@
         </div>
     </div>
 </section>
+<!-- Hero Section End --> --}}  
+
+
+
+
+
+  <!-- Hero Section Start -->
+  <section class="hero-wrap style3">
+    <img src="assets/img/hero/hero-shape-9.png" alt="Image" class="hero-shape-one moveHorizontal">
+    <img src="assets/img/hero/hero-shape-10.png" alt="Image" class="hero-shape-two moveVertical">
+    <img src="assets/img/hero/hero-shape-11.png" alt="Image" class="hero-shape-three">
+    <div class="container">
+       <div class="row">
+           <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+            <div class="hero-content">
+                <h1 data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">Welcome to Maha Ayurvedas</h1>
+                <p data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">Ontrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard</p>
+                <a href="shop-right-sidebar.html" class="btn style1" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">Shop Now</a>
+            </div>
+           </div>
+       </div>
+    </div>
+</section>
 <!-- Hero Section End -->
+
+<!-- Product Slider Start -->
+<div class="product-slider-wrap">
+    <div class="container">
+        <div class="product-slider-one owl-carousel">
+            <div class="product-card style4">
+                <div class="product-img">
+                    <img src="assets/img/product/product-13.jpg" alt="Image">
+                    {{-- <button type="button" class="btn style2 add-cart">Add To Cart</button> --}}
+                </div>
+                
+            </div>
+            <div class="product-card style4">
+                <div class="product-img">
+                    <img src="assets/img/product/product-14.jpg" alt="Image">
+                    {{-- <button type="button" class="btn style2 add-cart">Add To Cart</button> --}}
+                </div>
+                {{-- <div class="product-info-wrap">
+                   <div class="product-info">
+                        <h3><a href="shop-details.html">CBD Seeds</a></h3>
+                        <p class="price">$89.00 <span class="discount">$189.00</span></p>
+                   </div>
+                   <a href="shop-right-sidebar.html" class="btn style1">Shop Now</a>
+                </div> --}}
+            </div>
+            <div class="product-card style4">
+                <div class="product-img">
+                    <img src="assets/img/product/product-15.jpg" alt="Image">
+                    {{-- <button type="button" class="btn style2 add-cart">Add To Cart</button> --}}
+                </div>
+                {{-- <div class="product-info-wrap">
+                   <div class="product-info">
+                        <h3><a href="shop-details.html">Cannabis Oil</a></h3>
+                        <p class="price">$89.00 <span class="discount">$120.00</span></p>
+                   </div>
+                   <a href="shop-right-sidebar.html" class="btn style1">Shop Now</a>
+                </div> --}}
+            </div>
+            <div class="product-card style4">
+                <div class="product-img">
+                    <img src="assets/img/product/product-16.jpg" alt="Image">
+                    {{-- <button type="button" class="btn style2 add-cart">Add To Cart</button> --}}
+                </div>
+                {{-- <div class="product-info-wrap">
+                   <div class="product-info">
+                        <h3><a href="shop-details.html">Cannabis Gummy</a></h3>
+                        <p class="price">$89.00 </p>
+                   </div>
+                   <a href="shop-right-sidebar.html" class="btn style1">Shop Now</a>
+                </div> --}}
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Product Slider End -->
+
+
+
+
 
 <!-- Product Category Section Start -->
 <section class="product-cat-wrap ptb-100">
@@ -116,6 +198,172 @@
     </div>
 </section>
 <!-- Product Section End -->
+
+
+
+
+
+
+
+
+
+
+
+<section class="benefit-wrap style2 ptb-100">
+    <div class="container">
+        <div class="section-title style1 text-center mb-40">
+            <span><img src="assets/img/section-img.png" alt="Image">Benefit You'll Get</span>
+            <h2>Health Benefit Of CBD Oils</h2>
+        </div>
+        <div class="row gx-5">
+            <div class="col-lg-3">
+                <div class="benefit-card style1">
+                    <h3>Heart</h3>
+                     <p>There are many variations of passages of Lorem Ipsum available mred aln ine form.</p>
+                </div>
+                <div class="benefit-card style1">
+                    <h3>Brains</h3>
+                     <p>There are many variations of passages of Lorem Ipsum available mred aln ine form.</p>
+                </div>
+                <div class="benefit-card style1">
+                    <h3>Eyes</h3>
+                    <p>There are many variations of passages of Lorem Ipsum available mred aln ine form.</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="benefit-img-wrap">
+                    <img class="bn-img" src="{{asset('assets/img/ayurved/maha-512.png')}}" alt="Image">
+                    <ul class="benefit-list-icon list-style">
+                        <li>
+                            <img src="assets/img/about/arrow-1.png" alt="Image" class="bn-shape-arrow">
+                            <img src=" assets/img/about/shape-1.png" alt="Image" class="bn-shape">
+                            <i class="flaticon-witness"></i>
+                        </li>
+                        <li>
+                            <img src="assets/img/about/arrow-2.png" alt="Image" class="bn-shape-arrow">
+                            <img src=" assets/img/about/shape-2.png" alt="Image" class="bn-shape">
+                            <i class="flaticon-brain"></i>
+                        </li>
+                        <li>
+                            <img src="assets/img/about/arrow-3.png" alt="Image" class="bn-shape-arrow">
+                            <img src=" assets/img/about/shape-3.png" alt="Image" class="bn-shape">
+                            <i class="flaticon-heartbeat"></i>
+                        </li>
+                        <li>
+                            <img src="assets/img/about/arrow-4.png" alt="Image" class="bn-shape-arrow">
+                            <img src=" assets/img/about/shape-4.png" alt="Image" class="bn-shape">
+                            <i class="flaticon-lungs"></i>
+                        </li>
+                        <li>
+                            <img src="assets/img/about/arrow-5.png" alt="Image" class="bn-shape-arrow">
+                            <img src=" assets/img/about/shape-5.png" alt="Image" class="bn-shape">
+                            <i class="flaticon-stomach"></i>
+                        </li>
+                        <li>
+                            <img src="assets/img/about/arrow-6.png" alt="Image" class="bn-shape-arrow">
+                            <img src=" assets/img/about/shape-6.png" alt="Image" class="bn-shape">
+                            <i class="flaticon-ribbon"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="benefit-card">
+                    <h3>Asthma</h3>
+                     <p>There are many variations of passages of Lorem Ipsum available mred aln ine form.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Stomach</h3>
+                    <p>There are many variations of passages of Lorem Ipsum available mred aln ine form.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Cancer</h3>
+                     <p>There are many variations of passages of Lorem Ipsum available mred aln ine form.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- Benefit Section Start -->
+<section class="benefit-wrap pt-100 pb-75 bg-albastor">
+    <img src="assets/img/benefit-shape.png" alt="Image" class="benefit-shape-one sm-none">
+    <div class="container">
+        <div class="row gx-5 align-items-center">
+            <div class="col-xl-6">
+                <div class="benefit-img-wrap">
+                    <img src="assets/img/about/benefit-1.png" alt="Image">
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="benefit-content">
+                    <div class="content-title style1">
+                        <span><img src="assets/img/section-img.png" alt="Image">Benefit You'll Get</span>
+                        <h2>There Are Many Benefits Of Using Medical Cannabies</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="product-cat-card style2">
+                                <img class="cat-card-shape" src="assets/img/shape-1.png" alt="Image">
+                                <div class="product-cat-icon">
+                                    <i class="flaticon-meditation"></i>
+                                </div>
+                                <div class="product-cat-info">
+                                    <h3><a href="shop-right-sidebar.html">Promote Relaxation</a></h3>
+                                    <p>There are many variaties of amesum available, but the majority have suffered alteration in some.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="product-cat-card style2">
+                                <img class="cat-card-shape" src="assets/img/shape-1.png" alt="Image">
+                                <div class="product-cat-icon">
+                                    <i class="flaticon-back-1"></i>
+                                </div>
+                                <div class="product-cat-info">
+                                    <h3><a href="shop-right-sidebar.html">Relieves pain</a></h3>
+                                    <p>There are many variaties of amesum available, but the majority have suffered alteration in some.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="product-cat-card style2">
+                                <img class="cat-card-shape" src="assets/img/shape-1.png" alt="Image">
+                                <div class="product-cat-icon">
+                                    <i class="flaticon-herbal"></i>
+                                </div>
+                                <div class="product-cat-info">
+                                    <h3><a href="shop-right-sidebar.html">Increase Apetite</a></h3>
+                                    <p>There are many variaties of amesum available, but the majority have suffered alteration in some.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="product-cat-card style2">
+                                <img class="cat-card-shape" src="assets/img/shape-1.png" alt="Image">
+                                <div class="product-cat-icon">
+                                <i class="flaticon-massage"></i>
+                                </div>
+                                <div class="product-cat-info">
+                                    <h3><a href="shop-right-sidebar.html">Remove Headache</a></h3>
+                                    <p>There are many variaties of amesum available, but the majority have suffered alteration in some.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Benefit Section End -->
+
+
+
 
 <!-- Product Section Start -->
 <section class="product-wrap style2 pt-100 bg-albastor">
@@ -371,155 +619,14 @@
                 </div>
             </div>
         </div>
-        <div class="row pt-100 justify-content-center">
-            <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
-                <div class="promo-card style1">
-                    <div class="promo-title">
-                        <span class="promo-icon">
-                            <i class="flaticon-herbal-2"></i>
-                        </span>
-                        <h3>Best Herbs</h3>
-                    </div>
-                    <p>There are many variaties of rem amet consec but the major have suffered alteration in some case. </p>
-                </div>
-            </div>
-            <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
-                <div class="promo-card style1">
-                    <div class="promo-title">
-                        <span class="promo-icon">
-                            <i class="flaticon-medicine"></i>
-                        </span>
-                        <h3>Best Product</h3>
-                    </div>
-                    <p>There are many variaties of rem amet consec but the major have suffered alteration in some case. </p>
-                </div>
-            </div>
-            <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
-                <div class="promo-card style1">
-                    <div class="promo-title">
-                        <span class="promo-icon">
-                            <i class="flaticon-shipped"></i>
-                        </span>
-                        <h3>Home Delivery</h3>
-                    </div>
-                    <p>There are many variaties of rem amet consec but the major have suffered alteration in some case. </p>
-                </div>
-            </div>
-            <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500">
-                <div class="promo-card style1">
-                    <div class="promo-title">
-                        <span class="promo-icon">
-                            <i class="flaticon-bong"></i>
-                        </span>
-                        <h3>Bong Medical</h3>
-                    </div>
-                    <p>There are many variaties of rem amet consec but the major have suffered alteration in some case. </p>
-                </div>
-            </div>
-        </div>
+        
     </div>
 </div>
 <!-- CTA Section End -->
 
-<!-- Feature Product Sectin Start -->
-<section class="feature-product-wrap pb-100 bg-albastor">
-    <img src="assets/img/shape-2.png" alt="Image" class="feature-shape-one">
-    <img src="assets/img/wave-1.png" alt="Image" class="feature-shape-two">
-    <div class="container-fluid pt-100">
-        <div class="row gx-5 align-items-center">
-            <div class="col-xl-5 col-lg-6">
-                <div class="feature-content">
-                    <div class="content-title style1">
-                        <span><img src="assets/img/section-img.png" alt="Image">Cannabies Store</span>
-                        <h2>We Ensure Safe Diagnosis &amp; Effective Medication</h2>
-                        <p>There are many variations of passages of Lorem Ipsum amet bhe mred aln inected humour, or randomised words which don't look even slilievable. </p>
-                    </div>
-                    <ul class="content-feature-list list-style style1">
-                        <li><i class="ri-checkbox-line"></i>Oregon Lawmakers Take On State’s Illicit Pot Operations
-                        </li>
-                        <li><i class="ri-checkbox-line"></i>Florida Doctor Faces Permanent Medical Cannabis Ban
-                        </li>
-                        <li><i class="ri-checkbox-line"></i>Brazilian City of Goiânia Declares Cannabis Day</li>
-                    </ul>
-                    <a href="contact.html" class="btn style2">Contact us</a>
-                </div>
-            </div>
-            <div class="col-xl-7 col-lg-6">
-                <div class="feature-product-slider owl-carousel">
-                    <div class="product-card style3">
-                        <div class="product-img">
-                            <img src="assets/img/product/product-9.jpg" alt="Image">
-                            <button type="button" class="btn style2 add-cart">Add To Cart</button>
-                        </div>
-                        <div class="product-info">
-                            <h3><a href="shop-details.html">Sour Alien OG</a></h3>
-                            <p class="price">$53.00</p>
-                        </div>
-                    </div>
-                    <div class="product-card style3">
-                        <div class="product-img">
-                            <img src="assets/img/product/product-10.jpg" alt="Image">
-                            <button type="button" class="btn style2 add-cart">Add To Cart</button>
-                        </div>
-                        <div class="product-info">
-                            <h3><a href="shop-details.html">Boba Diagonal</a></h3>
-                            <p class="price">$86.00</p>
-                        </div>
-                    </div>
-                    <div class="product-card style3">
-                        <div class="product-img">
-                            <img src="assets/img/product/product-11.jpg" alt="Image">
-                            <button type="button" class="btn style2 add-cart">Add To Cart</button>
-                        </div>
-                        <div class="product-info">
-                            <h3><a href="shop-details.html">CBD Facewash 50ml</a></h3>
-                            <p class="price">$102.00</p>
-                        </div>
-                    </div>
-                    <div class="product-card style3">
-                        <div class="product-img">
-                            <img src="assets/img/product/product-12.jpg" alt="Image">
-                            <button type="button" class="btn style2 add-cart">Add To Cart</button>
-                        </div>
-                        <div class="product-info">
-                            <h3><a href="shop-details.html">Guchi CBD Serum</a></h3>
-                            <p class="price">$43.00</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Feature Product Sectin End -->
 
-<!-- Newsletter Section Start -->
-<section class="newsletter-wrap ptb-100">
-    <img src="assets/img/newsletter-shape-1.png" alt="Image" class="newsletter-shape-one">
-    <img src="assets/img/newsletter-shape-2.png" alt="Image" class="newsletter-shape-two moveHorizontal">
-    <img src="assets/img/newsletter-shape-3.png" alt="Image" class="newsletter-shape-three animationFramesTwo">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <div class="content-title style2">
-                    <span><img src="assets/img/section-img.png" alt="Image">Newsletter</span>
-                    <h2>Subscribe To Newsletter</h2>
-                    <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks making this the first true generator consect.</p>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <form action="#" class="newsletter-form">
-                    <input type="email" placeholder="Enter Your Email Address">
-                    <button type="submit">Subscribe Now</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Newsletter Section End -->
-
-<!-- Team Section Start -->
-<section class="team-wrap ptb-100 pb-75">
+ <!-- Team Section Start -->
+ <section class="team-wrap ptb-100 pb-75">
     <div class="container">
         <div class="row">
             <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
@@ -530,49 +637,38 @@
             </div>
         </div>
         <div class="team-slider-one owl-carousel">
-            @if (!empty($doctors))
-                @foreach ($doctors as $doctor)
-                <div class="team-card style1">
-                    <div class="team-img">
-                        @if($doctor->image !="")
-                            <img src="{{asset('uploads/doctor/thumb/'. $doctor->image)}}" alt="Image">
-                        @endif
-                        <ul class="social-profile list-style style1">
-                            <li>
-
-                                <button class="btn btn-primary">Book Now</button>
-                            </li>
-                            {{-- <li>
-                                <a target="_blank" href="https://facebook.com">
-                                    <i class="ri-facebook-fill"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://twitter.com">
-                                    <i class="ri-twitter-fill"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://linkedin.com">
-                                    <i class="ri-linkedin-fill"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://instagram.com">
-                                    <i class="ri-instagram-line"></i>
-                                </a>
-                            </li> --}}
-                        </ul>
-                    </div>
-                    <div class="team-info">
-                        <h3><a href="author-details.html">{{$doctor->name}}</a></h3>
-                        <span>{{$doctor->designation}}</span>
-                    </div>
+            <div class="team-card style1">
+                <div class="team-img">
+                    <img src="assets/img/team/team-1.jpg" alt="Image">
+                    <ul class="social-profile list-style style1">
+                        <li>
+                            <a target="_blank" href="https://facebook.com">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://twitter.com">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://linkedin.com">
+                                <i class="ri-linkedin-fill"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://instagram.com">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                @endforeach
-            @endif
-            
-            {{-- <div class="team-card style1">
+                <div class="team-info">
+                    <h3><a href="author-details.html">Sally Welchar</a></h3>
+                    <span>Senior Physician</span>
+                </div>
+            </div>
+            <div class="team-card style1">
                 <div class="team-img">
                     <img src="assets/img/team/team-2.jpg" alt="Image">
                     <ul class="social-profile list-style style1">
@@ -726,84 +822,12 @@
                     <h3><a href="author-details.html">Carol Owenes</a></h3>
                     <span>Medicine Specialist</span>
                 </div>
-            </div> --}}
+            </div>
         </div>
     </div>
 </section>
 <!-- Team Section End -->
 
-<!-- Benefit Section Start -->
-<section class="benefit-wrap pt-100 pb-75 bg-albastor">
-    <img src="assets/img/benefit-shape.png" alt="Image" class="benefit-shape-one sm-none">
-    <div class="container">
-        <div class="row gx-5 align-items-center">
-            <div class="col-xl-6">
-                <div class="benefit-img-wrap">
-                    <img src="assets/img/about/benefit-1.png" alt="Image">
-                </div>
-            </div>
-            <div class="col-xl-6">
-                <div class="benefit-content">
-                    <div class="content-title style1">
-                        <span><img src="assets/img/section-img.png" alt="Image">Benefit You'll Get</span>
-                        <h2>There Are Many Benefits Of Using Medical Cannabies</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6">
-                            <div class="product-cat-card style2">
-                                <img class="cat-card-shape" src="assets/img/shape-1.png" alt="Image">
-                                <div class="product-cat-icon">
-                                    <i class="flaticon-meditation"></i>
-                                </div>
-                                <div class="product-cat-info">
-                                    <h3><a href="shop-right-sidebar.html">Promote Relaxation</a></h3>
-                                    <p>There are many variaties of amesum available, but the majority have suffered alteration in some.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <div class="product-cat-card style2">
-                                <img class="cat-card-shape" src="assets/img/shape-1.png" alt="Image">
-                                <div class="product-cat-icon">
-                                    <i class="flaticon-back-1"></i>
-                                </div>
-                                <div class="product-cat-info">
-                                    <h3><a href="shop-right-sidebar.html">Relieves pain</a></h3>
-                                    <p>There are many variaties of amesum available, but the majority have suffered alteration in some.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <div class="product-cat-card style2">
-                                <img class="cat-card-shape" src="assets/img/shape-1.png" alt="Image">
-                                <div class="product-cat-icon">
-                                    <i class="flaticon-herbal"></i>
-                                </div>
-                                <div class="product-cat-info">
-                                    <h3><a href="shop-right-sidebar.html">Increase Apetite</a></h3>
-                                    <p>There are many variaties of amesum available, but the majority have suffered alteration in some.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <div class="product-cat-card style2">
-                                <img class="cat-card-shape" src="assets/img/shape-1.png" alt="Image">
-                                <div class="product-cat-icon">
-                                <i class="flaticon-massage"></i>
-                                </div>
-                                <div class="product-cat-info">
-                                    <h3><a href="shop-right-sidebar.html">Remove Headache</a></h3>
-                                    <p>There are many variaties of amesum available, but the majority have suffered alteration in some.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Benefit Section End -->
 
 <!-- Blog Section Start -->
 <section class="blog-wrap ptb-100 ">
@@ -857,5 +881,104 @@
     </div>
 </section>
 <!-- Blog Section End -->
+
+
+ <!-- Testimonial Section Start -->
+ <section class="testimonial-wrap ptb-100 bg-albastor">
+    <div class="container">
+        <div class="section-title style1 text-center mb-40">
+            <span><img src="assets/img/section-img.png" alt="Image">Testimonials</span>
+            <h2>What Our Patient Say About Us</h2>
+        </div>
+        <div class="testimonial-slider-one owl-carousel">
+            <div class="testimonial-card style3">
+                <p class="client-quote">Occaecati cupiditate non provident simi que sunt in culpa  officia deunt mollitia anim id est laborum et dolorum fuga. Et harum quidem rerum facilis est etour expedita distinctio libero tempore dolor.</p>
+                <div class="client-info-area">
+                    <div class="client-info-wrap">
+                        <div class="client-img">
+                            <img src="assets/img/testimonials/client-1.jpg" alt="Image">
+                        </div>
+                        <div class="client-info">
+                            <h3>Jim Morison</h3>
+                            <span>Director, BAT</span>
+                        </div>
+                    </div>
+                    <div class="quote-icon">
+                        <i class="flaticon-right-quote-sign"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card style3">
+                <p class="client-quote">Occaecati cupiditate non provident simi que sunt in culpa  officia deunt mollitia anim id est laborum et dolorum fuga. Et harum quidem rerum facilis est etour expedita distinctio libero tempore dolor.</p>
+                <div class="client-info-area">
+                    <div class="client-info-wrap">
+                        <div class="client-img">
+                            <img src="assets/img/testimonials/client-2.jpg" alt="Image">
+                        </div>
+                        <div class="client-info">
+                            <h3>Alex Cruis</h3>
+                            <span>CEO, IBAC</span>
+                        </div>
+                    </div>
+                    <div class="quote-icon">
+                        <i class="flaticon-right-quote-sign"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card style3">
+                <p class="client-quote">Occaecati cupiditate non provident simi que sunt in culpa  officia deunt mollitia anim id est laborum et dolorum fuga. Et harum quidem rerum facilis est etour expedita distinctio libero tempore dolor.</p>
+                <div class="client-info-area">
+                    <div class="client-info-wrap">
+                        <div class="client-img">
+                            <img src="assets/img/testimonials/client-3.jpg" alt="Image">
+                        </div>
+                        <div class="client-info">
+                            <h3>Tom Haris</h3>
+                            <span>Engineer, Olleo</span>
+                        </div>
+                    </div>
+                    <div class="quote-icon">
+                        <i class="flaticon-right-quote-sign"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card style3">
+                <p class="client-quote">Occaecati cupiditate non provident simi que sunt in culpa  officia deunt mollitia anim id est laborum et dolorum fuga. Et harum quidem rerum facilis est etour expedita distinctio libero tempore dolor.</p>
+                <div class="client-info-area">
+                    <div class="client-info-wrap">
+                        <div class="client-img">
+                            <img src="assets/img/testimonials/client-4.jpg" alt="Image">
+                        </div>
+                        <div class="client-info">
+                            <h3>Harry Jackson</h3>
+                            <span>Enterpreneur</span>
+                        </div>
+                    </div>
+                    <div class="quote-icon">
+                        <i class="flaticon-right-quote-sign"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card style3">
+                <p class="client-quote">Occaecati cupiditate non provident simi que sunt in culpa  officia deunt mollitia anim id est laborum et dolorum fuga. Et harum quidem rerum facilis est etour expedita distinctio libero tempore dolor.</p>
+                <div class="client-info-area">
+                    <div class="client-info-wrap">
+                        <div class="client-img">
+                            <img src="assets/img/testimonials/client-5.jpg" alt="Image">
+                        </div>
+                        <div class="client-info">
+                            <h3>Chris Haris</h3>
+                            <span>MD, ITec</span>
+                        </div>
+                    </div>
+                    <div class="quote-icon">
+                        <i class="flaticon-right-quote-sign"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  
+<!-- Testimonial Section End -->
 
 @endsection

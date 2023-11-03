@@ -240,7 +240,7 @@
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .header-wrap .navbar .navbar-brand {
-    max-width: 120px;
+    max-width: 150px;
   }
   .header-wrap .navbar .navbar-nav .nav-item {
     margin: 0 10px;

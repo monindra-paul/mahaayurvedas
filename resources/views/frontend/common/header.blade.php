@@ -1,7 +1,7 @@
  <!-- Page Wrapper End -->
         <div class="page-wrapper">
 
-            <!-- Header Section Start -->
+            {{-- <!-- Header Section Start -->
             <header class="header-wrap style2">
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-light">
@@ -26,7 +26,7 @@
                                 </li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
-                                        Services
+                                        Spe
                                         <i class="ri-arrow-down-line"></i>
                                     </a>
                                     <ul class="dropdown-menu">
@@ -192,8 +192,86 @@
                     </div>
                 </div>
             </header>    
-            <!-- Header Section End -->
+            <!-- Header Section End --> --}}
 
-           
-           
-  
+
+              <!-- Header Section Start -->
+              <header class="header-wrap style3">
+                <div class="container">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <div class="row align-items-center w-100">
+                            <div class="col-lg-5">
+                                <div class="collapse navbar-collapse main-menu-wrap" id="navbarSupportedContent">
+                                    <div class="menu-close d-lg-none">
+                                        <a href="javascript:void(0)"> <i class="ri-close-line"></i></a>
+                                    </div>
+                                    <ul class="navbar-nav me-auto">
+                                       
+                                        <li class="nav-item">
+                                            <a href="about.html" class="nav-link">
+                                                Home
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="{{url('/about-us')}}" class="nav-link">
+                                                About
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">
+                                                Speciality                                               
+                                            </a>                                            
+                                        </li>
+                                       
+                                        {{-- <li class="nav-item">
+                                            <a href="{{url('/book-appoinment')}}" class="nav-link">
+                                                Book Appoinment                                                
+                                            </a>                                            
+                                        </li> --}}
+                                        
+                                        <li class="nav-item">
+                                            <a href="contact.html" class="nav-link">Contact</a>
+                                        </li>
+                                       
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 m-0 p-0">
+                                <a class="navbar-brand" href="{{url('/')}}">
+                                    <img class="logo-light" src="{{asset('assets/img/ayurved/maha-ayurvedas.png')}}" alt="logo">
+                                    <!-- <img class="logo-dark" src="assets/img/logo-white.png" alt="logo"> -->
+                                </a>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="other-options md-none">
+                                    {{-- <div class="option-item">
+                                        <button class="searchbtn"><i class="ri-search-line"></i></button>
+                                    </div> --}}
+                                    {{-- <div class="option-item">
+                                        <a class="shopcart-btn" href="cart.html"><i class="flaticon-bag"></i> <span>10</span></a>
+                                    </div> --}}
+                                    <div class="option-item">
+                                        <a href="{{url('/book-appoinment')}}" class="btn style1">Book an Appoinment</a>
+                                    </div>
+                                    {{-- <div class="search-area">
+                                        <input type="search" placeholder="Search Here..">
+                                        <button type="submit"><i class="ri-search-line"></i></button>
+                                    </div> --}}
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="mobile-bar-wrap d-lg-none">
+                        <button class="searchbtn"><i class="ri-search-line"></i></button>
+                        <a class="shopcart-btn" href="cart.html"><i class="flaticon-bag"></i> <span>10</span></a>
+                        <div class="mobile-menu d-lg-none">
+                            <a href="javascript:void(0)"><i class="ri-menu-line"></i></a>
+                        </div>
+                        <div class="search-area">
+                            <input type="search" placeholder="Search Here..">
+                            <button type="submit"><i class="ri-search-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </header>  
+            <!-- Header Section End -->
