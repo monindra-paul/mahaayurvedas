@@ -8,10 +8,10 @@
     <div class="breadcrumb-wrap bg-f br-3">
         <div class="container">
             <div class="breadcrumb-title">
-                <h2>Shop</h2>
+                <h2>Category</h2>
                 <ul class="breadcrumb-menu list-style">
-                    <li><a href="index.html">Home </a></li>
-                    <li>Shop</li>
+                    <li><a href="{{url('/')}}">Home </a></li>
+                    <li>Category</li>
                 </ul>
             </div>
         </div>
@@ -43,21 +43,7 @@
                             </div>
                         </div> --}}
 
-                        <div class="sidebar-widget categories">
-                            <h4>Categories</h4>
-                            @if($categories->isNotEmpty())
-                            <ul class="category-box list-style">
-                                @foreach ($categories as $category)
-                                <li>
-                                    <a href="{{route('front.shop',$category->slug)}}" id="{{($categorySelected == $category->id) ? 'catselected' : ''}}">
-                                        <i class="ri-checkbox-line"></i>
-                                        {{$category->name}}
-                                    </a>
-                                </li>
-                                @endforeach                              
-                            </ul>
-                            @endif
-                        </div>
+                        
                         {{-- <div class="sidebar-widget tags">
                             <h4>Popular Tags </h4>
                             <div class="tag-list">
@@ -74,39 +60,39 @@
                         
                     </div>
                 </div>
-                <div class="col-xl-8 col-lg-12 order-xl-2 order-lg-1 order-md-1 order-1">
+                <div class="col-xl-12 col-lg-12 order-xl-2 order-lg-1 order-md-1 order-1">
                     
                     <div class="row justify-content-center">
 
-                        @if($products->isNotEmpty())
-                        @foreach($products as $product)
-                            @php
+                        @if($categories->isNotEmpty())
+                        @foreach($categories as $category)
+                            {{-- @php
                               $productImage = $product->product_images->first();
-                            @endphp
-                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                            @endphp --}}
+                        <div class="col-xxl-4 col-xl-3 col-lg-3 col-md-6">
                             <div class="product-card style6">
-                                @if(!empty($productImage->image))
-                                <div class="product-img">
-                                    <a href="{{route('front.product',$product->slug)}}">
-                                        <img src="{{asset('uploads/product/small/'.$productImage->image)}}" alt="Image">
+                                @if(!empty($category->image))
+                                <div class="product-img" style="border-radius:25px; border: 1px solid orange;">
+                                    <a href="{{route('front.shop',$category->slug)}}">
+                                        <img src="{{asset('uploads/category/thumb/'. $category->image)}}" alt="Image">
                                     </a>
-                                    <a href="{{route('front.product',$product->slug)}}" class="btn style2 add-cart">View Details</a>
+                                    
                                 </div>
                                 @endif
                                 <div class="product-info">
-                                    <p class="price">₹ {{$product->price}}
+                                    {{-- <p class="price">₹ {{$product->price}}
                                         @if($product->compare_price > 0)
                                         <span class="discount">₹ {{$product->compare_price}}</span>
                                         @endif
-                                    </p>
-                                    <h3><a href="{{route('front.product',$product->slug)}}">{{$product->title}}</a></h3>
-                                    <ul class="ratings list-style">
+                                    </p> --}}
+                                    <h3><a href="{{route('front.shop',$category->slug)}}">{{$category->name}}</a></h3>
+                                    {{-- <ul class="ratings list-style">
                                         <li><i class="ri-star-fill"></i></li>
                                         <li><i class="ri-star-fill"></i></li>
                                         <li><i class="ri-star-fill"></i></li>
                                         <li><i class="ri-star-fill"></i></li>
                                         <li><i class="ri-star-fill"></i></li>
-                                    </ul>
+                                    </ul> --}}
                                 </div>
                             </div>
                         </div>
@@ -114,7 +100,6 @@
                         @endif
                         
                    </div>
-                   {{$products->links()}}
                 </div>
             </div>
         </div>

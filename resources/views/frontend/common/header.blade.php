@@ -223,17 +223,24 @@
                                             </a>                                            
                                         </li>
                                        
+                                      
+                                        <li class="nav-item">
+                                            <a href="{{url('/categories')}}" class="nav-link">
+                                                Category                                                
+                                            </a>                                            
+                                        </li>
                                         <li class="nav-item">
                                             <a href="{{url('/shop')}}" class="nav-link">
                                                 Products                                                
                                             </a>                                            
                                         </li>
                                         
-                                        <li class="nav-item">
-                                            <a href="contact.html" class="nav-link">Contact</a>
-                                        </li>
+                                        
                                         <li class="nav-item d-lg-none">
                                             <a href="login.html" class="btn style1 w-block w-100">Book An Appointment</a>
+                                        </li>
+                                        <li class="nav-item d-lg-none">
+                                            <a href="login.html" class="btn style1 w-block w-100">Contact</a>
                                         </li>
                                        
                                     </ul>
@@ -253,6 +260,9 @@
                                     {{-- <div class="option-item">
                                         <a class="shopcart-btn" href="cart.html"><i class="flaticon-bag"></i> <span>10</span></a>
                                     </div> --}}
+                                    <div class="option-item">
+                                        <a href="{{url('/book-appointment')}}" class="btn style1">Contact</a>
+                                    </div>
                                     <div class="option-item">
                                         <a href="{{url('/book-appointment')}}" class="btn style1">Book an Appointment</a>
                                     </div>

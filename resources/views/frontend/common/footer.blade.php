@@ -1,10 +1,10 @@
  <!-- Footer Section Start -->
 <footer class="footer-wrap style2">
-    <img src="assets/img/footer-shape-1.png" alt="Image" class="footer-shape-one">
-    <img src="assets/img/footer-shape-2.png" alt="Image" class="footer-shape-two moveVertical  sm-none">
-    <img src="assets/img/footer-shape-3.png" alt="Image" class="footer-shape-three moveHorizontal">
-    <img src="assets/img/footer-shape-4.png" alt="Image" class="footer-shape-four animationFramesTwo sm-none">
-    <img src="assets/img/wave-1.png" alt="Image" class="footer-shape-five">
+    <img src="{{asset('assets/img/footer-shape-1.png')}}" alt="Image" class="footer-shape-one">
+    <img src="{{asset('assets/img/footer-shape-2.png')}}" alt="Image" class="footer-shape-two moveVertical  sm-none">
+    <img src="{{asset('assets/img/footer-shape-3.png')}}" alt="Image" class="footer-shape-three moveHorizontal">
+    <img src="{{asset('assets/img/footer-shape-4.png')}}" alt="Image" class="footer-shape-four animationFramesTwo sm-none">
+    <img src="{{asset('assets/img/wave-1.png')}}" alt="Image" class="footer-shape-five">
     <div class="container">
         <div class="row pt-100 pb-75">
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">

@@ -28,36 +28,27 @@
                     <div class="single-product-gallery">
                         <div class="swiper-container single-product-slider">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide single-product-item">
-                                    <img src="assets/img/product/single-product-1.jpg" />
+                                @if($product->product_images)
+                                @foreach($product->product_images as $key => $productImage)
+                                <div class="swiper-slide single-product-item {{($key == 0) ? 'active' : ''}}">
+                                    <img src="{{asset('uploads/product/large/'.$productImage->image)}}" />
                                 </div>
-                                <div class="swiper-slide single-product-item">
-                                    <img src="assets/img/product/single-product-2.jpg" />
-                                </div>
-                                <div class="swiper-slide single-product-item">
-                                    <img src="assets/img/product/single-product-3.jpg" />
-                                </div>
-                                <div class="swiper-slide single-product-item">
-                                    <img src="assets/img/product/single-product-4.jpg" />
-                                </div>
+                                @endforeach
+                                @endif
+                                
                             </div>
                             <div class="swiper-button-next"><i class="ri-arrow-right-s-line"></i></div>
                             <div class="swiper-button-prev"><i class="ri-arrow-left-s-line"></i></div>
                         </div>
                         <div thumbsSlider="" class="swiper-container single-product-thumbs">
                             <div class="swiper-wrapper">
+                                @if($product->product_images)
+                                @foreach($product->product_images as $key => $productImage)
                                 <div class="swiper-slide single-product-thumb bg-albastor">
-                                    <img src="assets/img/product/single-product-1.jpg" />
+                                    <img src="{{asset('uploads/product/large/'.$productImage->image)}}" />
                                 </div>
-                                <div class="swiper-slide single-product-thumb bg-albastor">
-                                    <img src="assets/img/product/single-product-2.jpg" />
-                                </div>
-                                <div class="swiper-slide single-product-thumb bg-albastor">
-                                    <img src="assets/img/product/single-product-3.jpg" />
-                                </div>
-                                <div class="swiper-slide single-product-thumb bg-albastor">
-                                    <img src="assets/img/product/single-product-4.jpg" />
-                                </div>
+                                @endforeach
+                                @endif
                             </div>
                         </div>
                     </div>
@@ -65,8 +56,9 @@
                 <div class="col-lg-6">
                     <div class="single-product-details">
                         <div class="single-product-title">
-                            <h2>Malfor CBD Essential</h2>
-                            <h3><span>$350</span> <span class="discount">$450</span></h3>
+                            <h2>{{$product->title}}</h2>
+                            <h3><span>₹ {{$product->price}}</span> 
+                                @if($product->compare_price > 0)<span class="discount">₹ {{$product->compare_price}}</span>@endif</h3>
                             <div class="ratings">
                                 <ul class="list-style">
                                     <li><i class="ri-star-fill"></i></li>
@@ -75,37 +67,29 @@
                                     <li><i class="ri-star-fill"></i></li>
                                     <li><i class="ri-star-fill"></i></li>
                                 </ul>
-                                <span>(12 customer review)</span>
+                                {{-- <span>(12 customer review)</span> --}}
                             </div>
                         </div>
                         <p class="single-product-desc">
-                            On the other hand, we denounce with righteous indignation and dislike men 
-                            so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble. 
+                            {!!$product->short_description!!}
                         </p>
                         <div class="product-more-option">
                             <div class="product-more-option-item">
                                 <h5>Category :</h5>
-                                <a href="shop-left-sidebar.html">Cannabies</a>
+                               {{$product->product_category->name}}
                             </div>
                             <div class="product-more-option-item">
                                 <h5>Product Capacity :</h5>
                                 <span>50 ml</span>
-                            </div>
-                            <div class="product-more-option-item">
-                                <h5>Product Code :</h5>
-                                <span>AE-009</span>
-                            </div>
-                            <div class="product-more-option-item">
-                                <h5>Availability :</h5>
-                                <span>In Stock</span>
-                            </div>
-                            <div class="product-more-option-item">
-                                <h5>Tag :</h5>
-                                <a href="shop-left-sidebar.html">Medicine</a>,<a href="shop-left-sidebar.html">Health</a>
-                            </div>
+                            </div>                           
+                            
+                            {{-- <div class="product-more-option-item">
+                                <h5>Brand :</h5>
+                               {{$product->$product_brand->name}}
+                            </div> --}}
                         </div>
                         <div class="product-more-option-item">
-                            <div class="product-quantity">
+                            {{-- <div class="product-quantity">
                                 <div class="qtySelector">
                                     <span class="decreaseQty">
                                         <i class="ri-subtract-line"></i>
@@ -115,8 +99,8 @@
                                         <i class="ri-add-line"></i>
                                     </span>
                                 </div>
-                            </div>
-                            <a href="cart.html" class="btn style1 add-to-cart">Add To Cart</a>
+                            </div> --}}
+                            <a href="https://api.whatsapp.com/send?phone=917001639863" target="_blank" class="btn style1 add-to-cart">Reach Us</a>
                         </div>
                     </div>
                 </div>
@@ -128,40 +112,38 @@
                             <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab_1"
                                 type="button" role="tab">Description</button>
                         </li>
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab_2"
                                 type="button" role="tab">Additional Information</button>
                         </li>
                         <li class="nav-item">
                             <button class="nav-link " data-bs-toggle="tab" data-bs-target="#tab_3" type="button"
                                 role="tab">Reviews</button>
-                        </li>
+                        </li> --}}
                     </ul>
                     <div class="tab-content product-tab-content">
                         <div class="tab-pane fade show active" id="tab_1" role="tabpanel">
-                            <div class="product_desc">
-                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occacupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum. </p>
-                                <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis d repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized bcharms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that.</p>
-                                <ul class="content-feature-list style1 list-style mt-15 mb-0">
-                                    <li><i class="ri-record-circle-fill"></i>
-                                        Lorem ipsum dolor, sit amet.
-                                    </li>
-                                    <li><i class="ri-record-circle-fill"></i>
-                                        Amet consectetur adipisicing elit Officia.
-                                    </li>
-                                    <li><i class="ri-record-circle-fill"></i>
-                                        Aquaerat ipsa quis possimus.
-                                    </li>
-                                    <li><i class="ri-record-circle-fill"></i>
-                                        Lorem aquaerat ipsa quis possimus.
-                                    </li>
-                                    <li><i class="ri-record-circle-fill"></i>
-                                         Consectetur Amet adipisicing elit Officia.
-                                    </li>
-                                </ul>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="product_desc">
+                                            {!! $product->description !!}
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        @php
+                                                            $productImage = $product->product_images->first();
+                                                            @endphp
+                                                            <div class="tp-product-details-desc-thumb">
+                                                                <img src="{{asset('uploads/product/small/'.$productImage->image)}}"
+                                                                    alt="">
+                                                            </div>
+                                    </div>
+                                </div>
                             </div>
+                            
                         </div>
-                        <div class="tab-pane fade" id="tab_2" role="tabpanel">
+                        {{-- <div class="tab-pane fade" id="tab_2" role="tabpanel">
                             <ul class="product_features list-style">
                                 <li><b>Brand:</b> Maford</li>
                                <li><b>Quantity:</b> 50ml</li>
@@ -261,7 +243,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
@@ -269,61 +251,54 @@
     </section>  
     <!-- Product Details section end -->
 
+
+
+    @if (!empty($relatedProducts))
      <!-- Product Section Start -->
     <section class="product-wrap pb-50">
         <div class="container ">
             <div class="row mb-40 align-items-center">
                 <div class="col-md-8">
                     <div class="section-title style1">
-                        <span><img src="assets/img/section-img.png" alt="Image">Our Shop</span>
+                        <span><img src="{{asset('assets/img/section-img.png')}}" alt="Image">Our Product</span>
                         <h2>Related Products</h2>
                     </div>
                 </div>
                 <div class="col-md-4 text-md-end sm-none">
-                    <a href="shop-right-sidebar.html" class="btn style2">View All Products</a>
+                    <a href="{{url('/shop')}}" class="btn style2">View All Products</a>
                 </div>
             </div>
             <div class="row justify-content-center">
+                @foreach($relatedProducts as $relProduct)
+                @php
+                $productImage = $relProduct->product_images->first();
+                @endphp
                 <div class="col-xl-4 col-lg-6 col-md-6">
                         <div class="product-card style2">
+                            @if(!empty($productImage->image))
                             <div class="product-img">
-                                <img src="assets/img/product/product-1.jpg" alt="Image">
-                                <button type="button" class="btn style2 add-cart">Add To Cart</button>
+                                <img src="{{asset('uploads/product/small/'.$productImage->image)}}" alt="Image">
+                                <a href="{{route('front.product',$product->slug)}}" class="btn style2 add-cart">View Details</a>
                             </div>
+                            @endif
                             <div class="product-info">
-                                <h3><a href="shop-details.html">Cannabis Oil</a></h3>
-                                <p class="price">$89.00 <span class="discount">$120.00</span></p>
+                                <h3><a href="{{route('front.product',$relProduct->slug)}}">{{$relProduct->title}}</a></h3>
+                                <p class="price"> ₹
+                                    {{$relProduct->price}}
+                                    @if ($relProduct->compare_price > 0)
+                                    <span class="discount"> {{$relProduct->compare_price}}</span>
+                                    @endif
+                                </p>
                             </div>
                         </div>
                 </div>
-                <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="product-card style2">
-                            <div class="product-img">
-                                <img src="assets/img/product/product-2.jpg" alt="Image">
-                                <button type="button" class="btn style2 add-cart">Add To Cart</button>
-                            </div>
-                            <div class="product-info">
-                                <h3><a href="shop-details.html">Critical Kush</a></h3>
-                                <p class="price">$89.00</p>
-                            </div>
-                        </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 col-md-6">
-                    <div class="product-card style2">
-                        <div class="product-img">
-                            <img src="assets/img/product/product-3.jpg" alt="Image">
-                            <button type="button" class="btn style2 add-cart">Add To Cart</button>
-                        </div>
-                        <div class="product-info">
-                            <h3><a href="shop-details.html">Elphabes Bliss</a></h3>
-                            <p class="price">$79.00 <span class="discount">$80.00</span></p>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
+                
             </div>
         </div>
     </section>
     <!-- Product Section End -->
+    @endif
 
 </div>
 <!-- Content Wrapper End -->

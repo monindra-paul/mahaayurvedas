@@ -387,7 +387,7 @@
                </div>
            </div>
            <div class="col-md-4 text-md-end sm-none">
-               <a href="shop-right-sidebar.html" class="btn style2">View All Products</a>
+               <a href="{{url('/shop')}}" class="btn style2">View All Products</a>
            </div>
        </div>
        <div class="row justify-content-center">

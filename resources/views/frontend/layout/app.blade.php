@@ -46,7 +46,7 @@
          <script src="{{asset('assets/js/jquery.min.js')}}"></script>
          <script src="{{asset('assets/js/bootstrap.bundle.min.js')}}"></script>
          <script src="{{asset('assets/js/form-validator.min.js')}}"></script>
-         <script src="{{asset('assets/js/contact-form-script.js')}}"></script>
+         {{-- <script src="{{asset('assets/js/contact-form-script.js')}}"></script> --}}
          <script src="{{asset('assets/js/aos.js')}}"></script>
          <script src="{{asset('assets/js/owl.carousel.min.js')}}"></script>
          <script src="{{asset('assets/js/swiper-min.js')}}"></script>

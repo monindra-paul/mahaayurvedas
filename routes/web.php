@@ -10,12 +10,15 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\LoginController;
 use App\Http\Controllers\Admin\TempImageController;
 use App\Http\Controllers\Admin\BrandController;
+use App\Http\Controllers\Admin\ContactController as AdminContactController;
 use App\Http\Controllers\Admin\DoctorController;
 use App\Http\Controllers\Admin\DoctorImageController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\ProductImageController;
 use App\Http\Controllers\Frontend\AboutController;
 use App\Http\Controllers\Frontend\AppoinmentController;
+use App\Http\Controllers\Frontend\CategoryController as FrontendCategoryController;
+use App\Http\Controllers\Frontend\ContactController;
 use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Frontend\ShopController;
 use App\Http\Controllers\Frontend\SpecialityController;
@@ -55,6 +58,10 @@ Route::get('/speciality',[SpecialityController::class,'speciality'])->name('fron
 Route::get('/shop/{categorySlug?}',[ShopController::class,'index'])->name('front.shop');
 Route::get('/product/{slug}',[ShopController::class,'product'])->name('front.product');
 
+Route::get('/categories',[FrontendCategoryController::class,'index'])->name('front.category'); 
+
+Route::get('/contact',[ContactController::class,'index'])->name('front.contact');
+Route::post('/contact',[ContactController::class,'postContact'])->name('front.postcontact');
 
 
 
@@ -148,6 +155,10 @@ Route::group(['prefix'=>'admin'],function(){
         Route::get('/appoinments',[AdminAppoinmentController::class,'index'])->name('appoinments');
         Route::put('/appoinment/{id}',[AdminAppoinmentController::class,'update'])->name('appoinments.update');
         Route::get('/appoinment/{id}',[AdminAppoinmentController::class,'show'])->name('appoinments.id');
+
+        Route::get('/contact',[AdminContactController::class,'index'])->name('contactapplication');
+        Route::put('/contact/{id}',[AdminContactController::class,'update'])->name('contactapplication.update');
+        Route::get('/contact/{id}',[AdminContactController::class,'show'])->name('contactapplication.id');
 
 
 
