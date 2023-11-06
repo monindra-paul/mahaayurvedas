@@ -74,16 +74,16 @@
 
   <!-- Hero Section Start -->
   <section class="hero-wrap style3">
-    <img src="assets/img/hero/hero-shape-9.png" alt="Image" class="hero-shape-one moveHorizontal">
-    <img src="assets/img/hero/hero-shape-10.png" alt="Image" class="hero-shape-two moveVertical">
-    <img src="assets/img/hero/hero-shape-11.png" alt="Image" class="hero-shape-three">
+    <img src="{{asset('assets/img/hero/hero-shape-9.png')}}" alt="Image" class="hero-shape-one moveHorizontal">
+    <img src="{{asset('assets/img/hero/hero-shape-10.png')}}" alt="Image" class="hero-shape-two moveVertical">
+    <img src="{{asset('assets/img/hero/hero-shape-11.png')}}" alt="Image" class="hero-shape-three">
     <div class="container">
        <div class="row">
            <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
             <div class="hero-content">
                 <h1 data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">Welcome to Maha Ayurvedas</h1>
                 <p data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">Ontrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard</p>
-                <a href="shop-right-sidebar.html" class="btn style1" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">Shop Now</a>
+                <a href="{{url('/shop')}}" class="btn style1" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">Shop Now</a>
             </div>
            </div>
        </div>
@@ -97,14 +97,14 @@
         <div class="product-slider-one owl-carousel">
             <div class="product-card style4">
                 <div class="product-img">
-                    <img src="assets/img/product/product-13.jpg" alt="Image">
+                    <img src="{{asset('assets/img/product/product-13.jpg')}}" alt="Image">
                     {{-- <button type="button" class="btn style2 add-cart">Add To Cart</button> --}}
                 </div>
                 
             </div>
             <div class="product-card style4">
                 <div class="product-img">
-                    <img src="assets/img/product/product-14.jpg" alt="Image">
+                    <img src="{{asset('assets/img/product/product-14.jpg')}}" alt="Image">
                     {{-- <button type="button" class="btn style2 add-cart">Add To Cart</button> --}}
                 </div>
                 {{-- <div class="product-info-wrap">
@@ -117,7 +117,7 @@
             </div>
             <div class="product-card style4">
                 <div class="product-img">
-                    <img src="assets/img/product/product-15.jpg" alt="Image">
+                    <img src="{{asset('assets/img/product/product-15.jpg')}}" alt="Image">
                     {{-- <button type="button" class="btn style2 add-cart">Add To Cart</button> --}}
                 </div>
                 {{-- <div class="product-info-wrap">
@@ -130,7 +130,7 @@
             </div>
             <div class="product-card style4">
                 <div class="product-img">
-                    <img src="assets/img/product/product-16.jpg" alt="Image">
+                    <img src="{{asset('assets/img/product/product-16.jpg')}}" alt="Image">
                     {{-- <button type="button" class="btn style2 add-cart">Add To Cart</button> --}}
                 </div>
                 {{-- <div class="product-info-wrap">
@@ -152,13 +152,13 @@
 
 <!-- Product Category Section Start -->
 <section class="product-cat-wrap ptb-100">
-    <img src="assets/img/category/cat-shape-1.png" alt="Image" class="cat-shape-one animationFramesTwo">
-    <img src="assets/img/category/cat-shape-2.png" alt="Image" class="cat-shape-two bounce sm-none">
+    <img src="{{asset('assets/img/category/cat-shape-1.png')}}" alt="Image" class="cat-shape-one animationFramesTwo">
+    <img src="{{asset('assets/img/category/cat-shape-2.png')}}" alt="Image" class="cat-shape-two bounce sm-none">
     <div class="container">
         <div class="row">
             <div class="col-xl-8 offset-xl-2">
                 <div class="section-title style1 text-center  mb-40">
-                    <span><img src="assets/img/section-img.png" alt="Image">Categories</span>
+                    <span><img src="{{asset('assets/img/section-img.png')}}" alt="Image">Categories</span>
                     <h2>Popular Categories</h2>
                 </div>
             </div>
@@ -174,7 +174,7 @@
                 </div>
                
                 @endif
-                <a class="cat-info" href="shop-right-sidebar.html">{{$lim_cat->name}}</a>
+                <a class="cat-info" href="{{route('front.shop',$lim_cat->slug)}}">{{$lim_cat->name}}</a>
             </div>
             @endforeach
             @endif
@@ -223,7 +223,7 @@
     <div class="container">
         <div class="section-title style1 text-center mb-40">
             <span><img src="assets/img/section-img.png" alt="Image">Benefit You'll Get</span>
-            <h2>Health Benefit Of CBD Oils</h2>
+            <h2>Why Ayurved?</h2>
         </div>
         <div class="row gx-5">
             <div class="col-lg-3">
@@ -382,7 +382,7 @@
        <div class="row mb-40 align-items-center">
            <div class="col-md-8">
                <div class="section-title style1">
-                    <span><img src="assets/img/section-img.png" alt="Image">Our Shop</span>
+                    <span><img src="{{asset('assets/img/section-img.png')}}" alt="Image">Our Shop</span>
                     <h2>Our Products</h2>
                </div>
            </div>
@@ -392,9 +392,9 @@
        </div>
        <div class="row justify-content-center">
 
-            <div class="col-xl-3 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
-                    @if($products->isNotEmpty())
-                        @foreach($products as $product)
+           @if($products->isNotEmpty())
+           @foreach($products as $product)
+                    <div class="col-xl-3 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
                               @php
                               $productImage = $product->product_images->first();
                               @endphp
@@ -402,11 +402,11 @@
                                 @if(!empty($productImage->image))
                                 <div class="product-img">
                                     <img src="{{asset('uploads/product/small/'.$productImage->image)}}" alt="Image">
-                                    <button type="button" class="btn style2 add-cart">Reach Us</button>
+                                    <a href="{{route('front.product',$product->slug)}}" class="btn style2 add-cart">View Details</a>
                                 </div>
                                 @endif
                                 <div class="product-info">
-                                    <h3><a href="shop-details.html">{{$product->title}}</a></h3>
+                                    <h3><a href="{{route('front.product',$product->slug)}}">{{$product->title}}</a></h3>
                                     <p class="price"> ₹ {{$product->price}} 
                                         @if($product->compare_price > 0)
                                         <span class="discount">₹ {{$product->compare_price}}</span>
@@ -414,9 +414,9 @@
                                     </p>
                                 </div>
                             </div>
+                        </div>
                         @endforeach
                     @endif
-            </div>
            
        </div>
        <div class="text-center d-md-none">
@@ -433,8 +433,8 @@
             <div class="col-lg-6 order-lg-1 order-md-2 order-2" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="300">
                 <div class="about-content">
                     <div class="content-title style1">
-                        <span><img src="assets/img/section-img.png" alt="Image">About Our Dispensary</span>
-                        <h2>Advertise Your Canna Business With Marijuanna</h2>
+                        <span><img src="{{asset('assets/img/section-img.png')}}" alt="Image">About Our Dispensary</span>
+                        <h2>Our Speciality in Various Filed</h2>
                         <p>There are many variations of passages of Lorem Ipsum available, bhe mred aln ine form, by injected humour, or randomised words which don't look even slilievable. If youre going to use a passage of lorem.</p>
                     </div>
                     <ul class="content-feature-list style1 list-style">
@@ -445,7 +445,7 @@
                         <li><i class="ri-logout-circle-r-line"></i>Metals Testing</li>
                         <li><i class="ri-logout-circle-r-line"></i>Fith Testing</li>
                     </ul>
-                    <a href="about.html" class="btn style2">Learn More</a>
+                    <a href="{{url('/speciality')}}" class="btn style2">Learn More</a>
                 </div>
             </div>
             <div class="col-lg-6 order-lg-2 order-md-1 order-1" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="300">

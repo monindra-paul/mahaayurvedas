@@ -80,7 +80,7 @@
                             </div>
                             <div class="product-more-option-item">
                                 <h5>Product Capacity :</h5>
-                                <span>50 ml</span>
+                                <span>{{$product->sizes}}</span>
                             </div>                           
                             
                             {{-- <div class="product-more-option-item">

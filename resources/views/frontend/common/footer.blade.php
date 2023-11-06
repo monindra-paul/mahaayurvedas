@@ -44,28 +44,28 @@
                     <h3 class="footer-widget-title">Quick Links</h3>
                     <ul class="footer-menu list-style">
                         <li>
-                            <a href="about.html">
-                                About Us
+                            <a href="{{url('/')}}">
+                               Home
                             </a>
                         </li>
                         <li>
-                            <a href="service-one.html">
-                                Our Services
+                            <a href="{{url('/about-us')}}">
+                               About
                             </a>
                         </li>
                         <li>
-                            <a href="team.html">
-                                Our Team
+                            <a href="{{url('/speciality')}}">
+                                Speciality
                             </a>
                         </li>
                         <li>
-                            <a href="features.html">
-                                Features
+                            <a href="{{url('/shop')}}">
+                                Products
                             </a>
                         </li>
                         <li>
-                            <a href="shop-right-sidebar.html">
-                                Cannabies Store
+                            <a href="{{url('/book-appointment')}}">
+                                Book Appointment
                             </a>
                         </li>
                     </ul>
@@ -73,16 +73,16 @@
             </div>
             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 ps-lg-5">
                 <div class="footer-widget">
-                    <h3 class="footer-widget-title">Explore</h3>
+                    <h3 class="footer-widget-title">Explore Us</h3>
                     <ul class="footer-menu list-style">
                         <li>
                             <a href="shop-grid.html">
-                            Recreation Shop
+                            Blog
                             </a>
                         </li>
                         <li>
                             <a href="blog-right-sidebar.html">
-                                News &amp; Articles
+                                Doctors
                             </a>
                         </li>
                         <li>
@@ -92,14 +92,10 @@
                         </li>
                         <li>
                             <a href="privacy-policy.html">
-                            Privacy Policy
+                            Contact
                             </a>
                         </li>
-                        <li>
-                            <a href="terms-of-service.html">
-                               Terms &amp; Conditions
-                            </a>
-                        </li>
+                        
                     </ul>
                 </div>
             </div>
@@ -110,24 +106,24 @@
                         <li>
                             <i class="flaticon-call-1"></i>
                             <h6>Phone</h6>
-                            <a href="tel:13454567877">+1-3454-5678-77</a>
+                            <a href="tel:+9198364 32543">+91 98364 32543</a>
                         </li>
                         <li>
                             <i class="flaticon-pin"></i>
                             <h6>Email</h6>
-                            <a href="mailto:hello@muva.com">hello@muva.com</a>
+                            <a href="mailto:support@mahaayurvedas.com">support@mahaayurvedas.com</a>
                         </li>
                         <li>
                             <i class="flaticon-email-2"></i>
                             <h6>Address</h6>
-                            <p>2767 Sunrise Street, NY 1002, USA</p>
+                            <p>P.O - 110, Sovabazar St, Sovabazar, Hatkhola,<br> Kolkata, West Bengal 700005</p>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-    <p class="copyright-text"><i class="ri-copyright-line"></i> <span>Muva</span>. All Rights Reserved By <a href="https://envytheme.com/" target="_blank">EnvyTheme</a></p>
+    <p class="copyright-text"><i class="ri-copyright-line"></i> <span>Maha Ayurvedas</span>. 2023 All Rights Reserved. <a href="https://ecoretechserv.com/" target="_blank">Developed By ECore TechServ</a></p>
 </footer>
 <!-- Footer Section End -->
 

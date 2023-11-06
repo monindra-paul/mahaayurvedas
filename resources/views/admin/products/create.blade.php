@@ -115,7 +115,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="mb-3">
-                                            <label for="sizes">Sizes Available</label>
+                                            <label for="sizes">Product Capcity</label>
                                             <input type="text" name="sizes" id="sizes" class="form-control"
                                                 placeholder="Sizes Available">
                                             <p class="error"></p>

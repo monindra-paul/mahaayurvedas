@@ -19,6 +19,7 @@ use App\Http\Controllers\Frontend\AboutController;
 use App\Http\Controllers\Frontend\AppoinmentController;
 use App\Http\Controllers\Frontend\CategoryController as FrontendCategoryController;
 use App\Http\Controllers\Frontend\ContactController;
+use App\Http\Controllers\Frontend\DoctorController as FrontendDoctorController;
 use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Frontend\ShopController;
 use App\Http\Controllers\Frontend\SpecialityController;
@@ -63,7 +64,8 @@ Route::get('/categories',[FrontendCategoryController::class,'index'])->name('fro
 Route::get('/contact',[ContactController::class,'index'])->name('front.contact');
 Route::post('/contact',[ContactController::class,'postContact'])->name('front.postcontact');
 
-
+Route::get('/doctors',[FrontendDoctorController::class,'index'])->name('front.doctor');
+Route::get('/doctors/{slug}',[FrontendDoctorController::class,'doctor'])->name('front.doctor.show');
 
 
 

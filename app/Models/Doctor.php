@@ -9,5 +9,7 @@ class Doctor extends Model
 {
     use HasFactory;
 
-   
+    public function doctor_images(){
+        return $this->hasMany(TempImage::class);
+    }
 }

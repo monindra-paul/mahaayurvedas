@@ -200,7 +200,7 @@
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-light">
                         <div class="row align-items-center w-100">
-                            <div class="col-lg-5">
+                            <div class="col-lg-5" id="hedder-padding-left">
                                 <div class="collapse navbar-collapse main-menu-wrap" id="navbarSupportedContent">
                                     <div class="menu-close d-lg-none">
                                         <a href="javascript:void(0)"> <i class="ri-close-line"></i></a>
@@ -208,7 +208,7 @@
                                     <ul class="navbar-nav me-auto">
                                        
                                         <li class="nav-item">
-                                            <a href="about.html" class="nav-link">
+                                            <a href="{{url('/')}}" class="nav-link">
                                                 Home
                                             </a>
                                         </li>
@@ -220,6 +220,11 @@
                                         <li class="nav-item">
                                             <a href="{{url('/speciality')}}" class="nav-link">
                                                 Speciality                                               
+                                            </a>                                            
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="{{url('/doctors')}}" class="nav-link">
+                                                Doctors                                               
                                             </a>                                            
                                         </li>
                                        
@@ -237,10 +242,10 @@
                                         
                                         
                                         <li class="nav-item d-lg-none">
-                                            <a href="login.html" class="btn style1 w-block w-100">Book An Appointment</a>
+                                            <a href="{{url('/book-appointment')}}" class="btn style1 w-block w-100">Book An Appointment</a>
                                         </li>
                                         <li class="nav-item d-lg-none">
-                                            <a href="login.html" class="btn style1 w-block w-100">Contact</a>
+                                            <a href="{{url('/contact')}}" class="btn style1 w-block w-100">Contact</a>
                                         </li>
                                        
                                     </ul>
@@ -252,7 +257,7 @@
                                     <!-- <img class="logo-dark" src="assets/img/logo-white.png" alt="logo"> -->
                                 </a>
                             </div>
-                            <div class="col-lg-5">
+                            <div class="col-lg-5" id="hedder-padding-right">
                                 <div class="other-options md-none">
                                     {{-- <div class="option-item">
                                         <button class="searchbtn"><i class="ri-search-line"></i></button>
@@ -261,7 +266,7 @@
                                         <a class="shopcart-btn" href="cart.html"><i class="flaticon-bag"></i> <span>10</span></a>
                                     </div> --}}
                                     <div class="option-item">
-                                        <a href="{{url('/book-appointment')}}" class="btn style1">Contact</a>
+                                        <a href="{{url('/contact')}}" class="btn style1">Contact</a>
                                     </div>
                                     <div class="option-item">
                                         <a href="{{url('/book-appointment')}}" class="btn style1">Book an Appointment</a>

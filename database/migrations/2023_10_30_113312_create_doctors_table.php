@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('name')->nullable();
             $table->string('designation')->nullable();
             $table->string('slug')->nullable();
+            $table->text('about')->nullable();
             $table->string('image')->nullable();
             $table->boolean('status')->default(1);
             $table->enum('showHome',['Yes','No'])->default('No');

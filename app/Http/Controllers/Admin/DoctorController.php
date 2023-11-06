@@ -41,6 +41,7 @@ class DoctorController extends Controller
             'name' => 'required',
             'designation' => 'required',
             'slug' => 'required|unique:doctors',
+            'about' => 'required',
 
         ]);
 
@@ -50,6 +51,7 @@ class DoctorController extends Controller
             $doctor->name = $request->name;
             $doctor->slug = $request->slug;
             $doctor->designation = $request->designation;
+            $doctor->about = $request->about;
             $doctor->status = $request->status;
             $doctor->showHome = $request->showHome;
             $doctor->save();
@@ -145,6 +147,7 @@ class DoctorController extends Controller
             $doctor->name = $request->name;
             $doctor->slug = $request->slug;
             $doctor->designation = $request->designation;
+            $doctor->about = $request->about;
             $doctor->status = $request->status;
             $doctor->showHome = $request->showHome;
             $doctor->save();

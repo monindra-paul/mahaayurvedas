@@ -2475,7 +2475,7 @@ select {
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    background: linear-gradient(90deg, #A8DC51 0%, #4CA754 99.88%);
+    background: linear-gradient(90deg, #F75F05 0%, #F75F05 99.88%);
   }
 
   .mobile-menu a {
@@ -8128,3 +8128,15 @@ article {
     Buy Now Btn
 -------------------------------*/
 /*# sourceMappingURL=style.css.map */
+
+
+
+
+/* custom code */
+
+/* #hedder-padding-left{
+padding-left: 20px;
+}
+#hedder-padding-right{
+padding-right: 20px;
+} */

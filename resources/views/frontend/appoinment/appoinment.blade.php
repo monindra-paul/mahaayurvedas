@@ -93,10 +93,10 @@
                             <span class="text-danger">{{ $errors->first('doctor') }}</span>
                             @endif                            
                             <select class="form-select form-select-md" name="doctor" id="doctor" aria-label=".form-select-sm example">
-                                <option selected>Select Doctor</option>
+                                <option selected >Select Doctor</option>
                                  @if(!empty($doctors))
                                      @foreach($doctors as $doctor)
-                                        <option value="{{$doctor->name}}" @if ($doctor->name) selected @endif>{{$doctor->name}}</option>                             
+                                        <option value="{{$doctor->name}}">{{$doctor->name}}</option>                             
                                     @endforeach
                                  @endif
                             </select>                            

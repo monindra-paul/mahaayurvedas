@@ -47,6 +47,13 @@
                                     <p></p>
                                 </div>
                             </div>
+                            <div class="col-md-8">
+                                <div class="mb-3">
+                                    <label for="aboutdoctor">About Doctor</label>
+                                    <textarea name="about" id="about" cols="30" rows="10"
+                                        class="summernote" placeholder="About Doctor"></textarea>
+                                </div>
+                            </div>
                             <div class="col-md-5">
                                 <div class="mb-3">
                                     <input type="hidden" id="image_id" name="image_id" value="">
