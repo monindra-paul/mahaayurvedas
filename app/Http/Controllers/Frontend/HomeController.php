@@ -26,7 +26,7 @@ class HomeController extends Controller
         ->take(6)
         ->get();
 
-        $lim_cats = Category::orderBy('id','DESC')->where('status',1)->take(6)->get();
+        $lim_cats = Category::orderBy('id','DESC')->where('status',1)->take(8)->get();
 
 
         $doctors = Doctor::orderBy('name','DESC')->where('status',1)->get();

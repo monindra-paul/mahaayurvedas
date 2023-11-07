@@ -53,6 +53,8 @@ Route::post('/book-appointment',[AppoinmentController::class,'postAppoinment'])-
 
 
 Route::get('/about-us',[AboutController::class,'about'])->name('front.about');
+Route::get('/doctors/{slug}',[AboutController::class,'doctor'])->name('front.about.show');
+
 
 Route::get('/speciality',[SpecialityController::class,'speciality'])->name('front.speciality');
 

@@ -23,14 +23,12 @@
         <div class="container">
             <div class="row gx-5 align-items-center">
                 <div class="col-lg-6 col-md-12">
-                    {{-- @php
-                    $doctorImage = $doctors->doctor_images->first();
-                    @endphp
-                     @if(!empty($doctorImage->image))
+                   
+                     @if(!empty($doctors->image))
                     <div class="team-details-image">
-                        <img src="{{asset('uploads/doctor/'.$doctorImage->image)}}" alt="image">
+                        <img src="{{asset('uploads/doctor/'.$doctors->image)}}" alt="image">
                     </div>
-                    @endif --}}
+                    @endif
 
                 </div>
                 @if(!empty($doctors))
@@ -41,29 +39,15 @@
                         <span>{{$doctors->designation}}</span>
                        </div>
                         <p>{!! $doctors->about !!}</p>
-                        <p>Officials lpsum dolor sit amet consectetur adipisicing elit. Velit optio iure consequuntur numquam rem et ipsam officiis slias.</p>
-                        <img src="assets/img/team/sign.png" alt="Image">
+                        
+                        <h4>
+                            <span>₹ {{$doctors->price}}</span> 
+                            @if($doctors->compare_price > 0)
+                            <s><span class="discount">₹ {{$doctors->compare_price}}</span></s>
+                            @endif
+                        </h4>
                         <ul class="social-profile style3 list-style">
-                            <li>
-                                <a target="_blank" href="https://facebook.com">
-                                    <i class="ri-facebook-line"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://twitter.com">
-                                    <i class="ri-twitter-line"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://instagram.com">
-                                    <i class="ri-instagram-line"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://linkedin.com">
-                                    <i class="ri-linkedin-line"></i>
-                                </a>
-                            </li>
+                            <a href="{{route('index.appoinment')}}" class="btn style2 add-cart">Book Appointment</a>
                         </ul>
                     </div>
                 </div>

@@ -42,6 +42,8 @@ class DoctorController extends Controller
             'designation' => 'required',
             'slug' => 'required|unique:doctors',
             'about' => 'required',
+            'price' => 'required',
+            'compare_price' => 'required',
 
         ]);
 
@@ -52,6 +54,8 @@ class DoctorController extends Controller
             $doctor->slug = $request->slug;
             $doctor->designation = $request->designation;
             $doctor->about = $request->about;
+            $doctor->price = $request->price;
+            $doctor->compare_price = $request->compare_price;
             $doctor->status = $request->status;
             $doctor->showHome = $request->showHome;
             $doctor->save();
@@ -139,6 +143,9 @@ class DoctorController extends Controller
             'name' => 'required',
             'designation' => 'required',
             'slug' => 'required|unique:doctors,slug,' . $doctor->id . ',id',
+            'about' => 'required',
+            'price' => 'required',
+            'compare_price' => 'required',
 
         ]);
 
@@ -148,6 +155,8 @@ class DoctorController extends Controller
             $doctor->slug = $request->slug;
             $doctor->designation = $request->designation;
             $doctor->about = $request->about;
+            $doctor->price = $request->price;
+            $doctor->compare_price = $request->compare_price;
             $doctor->status = $request->status;
             $doctor->showHome = $request->showHome;
             $doctor->save();

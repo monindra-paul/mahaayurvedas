@@ -108,6 +108,50 @@
     </section>
     <!-- Product Section End -->
 
+
+
+    <!-- Team Section Start -->
+    <section class="team-wrap  pb-75">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 mt-5">
+                    <div class="section-title style1 text-center mb-40">
+                        <span><img src="assets/img/section-img.png" alt="Image">Meet Our Doctors</span>
+                        <h2>Led By Experienced Doctors</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+
+                @if(!empty($doctors))
+                @foreach($doctors as $doctor)
+
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="team-card style1">
+                        @if($doctor->image !="")
+                        <div class="team-img">
+                            <img src="{{asset('uploads/doctor/'. $doctor->image)}}" alt="Image">
+                            <ul class="social-profile list-style style1">
+                                <a href="{{route('front.doctor.show',$doctor->slug)}}" class="btn m-0 p-0">View Details</a>  
+                            </ul>
+                        </div>
+                        @endif
+                        <div class="team-info">
+                            <h3>{{$doctor->name}}</h3>
+                            <span>{{$doctor->designation}}</span>
+                        </div>
+                    </div>
+                </div>
+                @endforeach
+                @endif
+            </div>
+        </div>
+    </section>
+    <!-- Team Section End -->
+
+
+
+
     <!-- Simple Section Start -->
     <section class="simple-wrap pb-100">
         <div class="container">

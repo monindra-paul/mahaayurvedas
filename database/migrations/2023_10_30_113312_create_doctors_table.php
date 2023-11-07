@@ -17,6 +17,8 @@ return new class extends Migration
             $table->string('designation')->nullable();
             $table->string('slug')->nullable();
             $table->text('about')->nullable();
+            $table->double('price', 10,2);
+            $table->double('compare_price', 10,2)->nullable();
             $table->string('image')->nullable();
             $table->boolean('status')->default(1);
             $table->enum('showHome',['Yes','No'])->default('No');

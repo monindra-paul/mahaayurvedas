@@ -54,6 +54,32 @@
                                         class="summernote" placeholder="About Doctor">{{ $doctors->about }}</textarea>
                                 </div>
                             </div>
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <h2 class="h4 mb-3">Pricing</h2>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="mb-3">
+                                                <label for="price">Price</label>
+                                                <input type="text" name="price" id="price" class="form-control"
+                                                    placeholder="Price" value="{{$doctors->price}}">
+                                                <p class="error"></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="mb-3">
+                                                <label for="compare_price">Compare at Price</label>
+                                                <input type="text" name="compare_price" id="compare_price"
+                                                    class="form-control" placeholder="Compare Price" value="{{$doctors->compare_price}}">
+                                                <p class="text-muted mt-3" >
+                                                    To show a reduced price, move the product’s original price into Compare
+                                                    at price. Enter a lower value into Price.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="col-md-5">
                                 <div class="mb-3">
                                     <input type="hidden" id="image_id" name="image_id" value="">

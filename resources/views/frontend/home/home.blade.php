@@ -222,22 +222,22 @@
 <section class="benefit-wrap style2 ptb-100">
     <div class="container">
         <div class="section-title style1 text-center mb-40">
-            <span><img src="assets/img/section-img.png" alt="Image">Benefit You'll Get</span>
-            <h2>Why Ayurved?</h2>
+            <span><img src="assets/img/section-img.png" alt="Image">Benefits of Ayurveda</span>
+            <h2>Why Ayurveda?</h2>
         </div>
         <div class="row gx-5">
             <div class="col-lg-3">
                 <div class="benefit-card style1">
-                    <h3>Heart</h3>
-                     <p>There are many variations of passages of Lorem Ipsum available mred aln ine form.</p>
+                    <h3>Natural Treatment</h3>
+                     <p>Provide all natural treatment based on home science</p>
                 </div>
                 <div class="benefit-card style1">
-                    <h3>Brains</h3>
-                     <p>There are many variations of passages of Lorem Ipsum available mred aln ine form.</p>
+                    <h3>Minimum Side Effects</h3>
+                     <p>Minimum side effects of any cure from natural ayurveda.</p>
                 </div>
                 <div class="benefit-card style1">
-                    <h3>Eyes</h3>
-                    <p>There are many variations of passages of Lorem Ipsum available mred aln ine form.</p>
+                    <h3>Rejuvinate</h3>
+                    <p>Rejuvinate your body and your mind.</p>
                 </div>
             </div>
             <div class="col-lg-6">
@@ -247,12 +247,12 @@
                         <li>
                             <img src="assets/img/about/arrow-1.png" alt="Image" class="bn-shape-arrow">
                             <img src=" assets/img/about/shape-1.png" alt="Image" class="bn-shape">
-                            <i class="flaticon-witness"></i>
+                            <i class="ri-empathize-fill"></i>
                         </li>
                         <li>
                             <img src="assets/img/about/arrow-2.png" alt="Image" class="bn-shape-arrow">
                             <img src=" assets/img/about/shape-2.png" alt="Image" class="bn-shape">
-                            <i class="flaticon-brain"></i>
+                            <i class="ri-virus-line"></i>
                         </li>
                         <li>
                             <img src="assets/img/about/arrow-3.png" alt="Image" class="bn-shape-arrow">
@@ -267,28 +267,28 @@
                         <li>
                             <img src="assets/img/about/arrow-5.png" alt="Image" class="bn-shape-arrow">
                             <img src=" assets/img/about/shape-5.png" alt="Image" class="bn-shape">
-                            <i class="flaticon-stomach"></i>
+                            <i class="ri-recycle-line"></i>
                         </li>
                         <li>
                             <img src="assets/img/about/arrow-6.png" alt="Image" class="bn-shape-arrow">
                             <img src=" assets/img/about/shape-6.png" alt="Image" class="bn-shape">
-                            <i class="flaticon-ribbon"></i>
+                            <i class="ri-psychotherapy-line"></i>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-3">
                 <div class="benefit-card">
-                    <h3>Asthma</h3>
-                     <p>There are many variations of passages of Lorem Ipsum available mred aln ine form.</p>
+                    <h3>Indian System of Medicine</h3>
+                     <p>Steroid free indian system of medicine.</p>
                 </div>
                 <div class="benefit-card">
-                    <h3>Stomach</h3>
-                    <p>There are many variations of passages of Lorem Ipsum available mred aln ine form.</p>
+                    <h3>Tridosha</h3>
+                    <p>Balance your tridosha according to your need.</p>
                 </div>
                 <div class="benefit-card">
-                    <h3>Cancer</h3>
-                     <p>There are many variations of passages of Lorem Ipsum available mred aln ine form.</p>
+                    <h3>Build your health</h3>
+                     <p>Medicine works systematically and build your health.</p>
                 </div>
             </div>
         </div>
@@ -297,6 +297,42 @@
 
 
 
+<!-- About Section Start -->
+<section class="about-wrap style2 ptb-100">
+    <div class="container">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-7 order-lg-1 order-md-2 order-2" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="300">
+                <div class="about-content">
+                    <div class="content-title style1">
+                        <span><img src="{{asset('assets/img/section-img.png')}}" alt="Image">About Maha Ayurveda</span>
+                        <h2>Our Speciality in Various Filed</h2>
+                        <p>Ayurveda treatment may vary man to man. Thats  why Maha Ayurveda can not give you 100% garantee on treatment and suitability of treatments.</p>
+                    </div>
+                    <ul class="content-feature-list style1 list-style">
+                        <li><i class="ri-logout-circle-r-line"></i>Online Video Consulting</li>
+                        <li><i class="ri-logout-circle-r-line"></i>Qualified & BAMS Certified Doctors</li>
+                        <li><i class="ri-logout-circle-r-line"></i>Door Step Medicine</li>
+                        <li><i class="ri-logout-circle-r-line"></i>Steriod Free Treatment</li>
+                        <li><i class="ri-logout-circle-r-line"></i>Only Branded & Trusted Medicine Recomended</li>
+                        {{-- <li><i class="ri-logout-circle-r-line"></i>Fith Testing</li> --}}
+                    </ul>
+                    <a href="{{url('/about-us')}}" class="btn style2">Know More</a>
+                </div>
+            </div>
+            <div class="col-lg-5 order-lg-2 order-md-1 order-1" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="300">
+                <div class="about-img-wrap">
+                    <img src="assets/img/about/about-shape-3.png" alt="Image" class="about-shape-one">
+                    <img src="assets/img/about/about-shape-4.png" alt="Image" class="about-shape-two">
+                    <div class="about-shape-three">
+                        <img src="assets/img/about/about-shape-5.png" alt="Image" class="rotate">
+                    </div>
+                    <img src="assets/img/about/about-img-2.png" alt="Image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About Section End -->
 
 
 <!-- Benefit Section Start -->
@@ -426,42 +462,6 @@
 </section>
 <!-- Product Section End -->
 
-<!-- About Section Start -->
-<section class="about-wrap style2 ptb-100">
-    <div class="container">
-        <div class="row gx-5 align-items-center">
-            <div class="col-lg-6 order-lg-1 order-md-2 order-2" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="300">
-                <div class="about-content">
-                    <div class="content-title style1">
-                        <span><img src="{{asset('assets/img/section-img.png')}}" alt="Image">About Our Dispensary</span>
-                        <h2>Our Speciality in Various Filed</h2>
-                        <p>There are many variations of passages of Lorem Ipsum available, bhe mred aln ine form, by injected humour, or randomised words which don't look even slilievable. If youre going to use a passage of lorem.</p>
-                    </div>
-                    <ul class="content-feature-list style1 list-style">
-                        <li><i class="ri-logout-circle-r-line"></i>THC Potency Testing</li>
-                        <li><i class="ri-logout-circle-r-line"></i>Mycotoxins Testing</li>
-                        <li><i class="ri-logout-circle-r-line"></i>Pesticides Testing</li>
-                        <li><i class="ri-logout-circle-r-line"></i>Terpenes Testing</li>
-                        <li><i class="ri-logout-circle-r-line"></i>Metals Testing</li>
-                        <li><i class="ri-logout-circle-r-line"></i>Fith Testing</li>
-                    </ul>
-                    <a href="{{url('/speciality')}}" class="btn style2">Learn More</a>
-                </div>
-            </div>
-            <div class="col-lg-6 order-lg-2 order-md-1 order-1" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="300">
-                <div class="about-img-wrap">
-                    <img src="assets/img/about/about-shape-3.png" alt="Image" class="about-shape-one">
-                    <img src="assets/img/about/about-shape-4.png" alt="Image" class="about-shape-two">
-                    <div class="about-shape-three">
-                        <img src="assets/img/about/about-shape-5.png" alt="Image" class="rotate">
-                    </div>
-                    <img src="assets/img/about/about-img-2.png" alt="Image">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- About Section End -->
 
 <!-- CTA  Section Start -->
 <div class="cta-wrap pt-100 pb-75">

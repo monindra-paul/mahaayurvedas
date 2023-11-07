@@ -53,6 +53,8 @@
                                     <label for="date">Date & Time (Time is in 24 Hours Format)</label>
                                     <input type="datetime-local" readonly name="date" id="date" value="{{ $appoinments->date }}" class="form-control"
                                         placeholder="Date">
+                                        {{-- <input type="datetime-local" name="date" id="date" value="{{ $appoinments->date }}" onkeyup="appdate(this)"  class="form-control"/> --}}
+
                                     <p></p>
                                 </div>
                             </div>
@@ -98,10 +100,11 @@
                 <div class="pb-5 pt-3">
                     {{-- <button class="btn btn-primary" type="submit">Update</button> --}}
                     <a href="{{ url('admin/appoinments') }}" class="btn btn-outline-dark ml-3">Cancel</a>
+                    <button type="button" onclick="sendWp();" class="btn btn-primary ml-3">Send Confirmation</button>
                 </div>
                 <div class="pb-5 pt-3">
                     {{-- <button class="btn btn-primary" type="submit">Update</button> --}}
-                    <button type="button" onclick="sendWp();" class="btn btn-primary ml-3">Go to Whatsapp</button>
+                    
                 </div>
             </form>
         </div>
@@ -116,6 +119,10 @@
 
 <script>
 
+function appdate(date) {
+// i am spammy!
+  alert(date.value);
+}
 
     function sendWp(){
         var phone = "+91{{$appoinments->mobile}}";
@@ -124,6 +131,7 @@
         var email = "{{$appoinments->email}}";
         var address = "{{$appoinments->address}}";
         var date = "{{$appoinments->date}}";
+        var qr = "monindrap@fbl";
        
 
         // var name = document.getElementById('name').value;
@@ -135,6 +143,7 @@
         +"*Age :* " +age+"%0a"
         +"*Email :* " +email+"%0a"
         +"*Address :* " +address+"%0a"
+        +"*Qr :* " +qr+"%0a"
         +"*Date :* " +date+"%0a";
        
 
