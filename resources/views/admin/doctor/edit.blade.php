@@ -52,6 +52,7 @@
                                     <label for="aboutdoctor">About Doctor</label>
                                     <textarea name="about" id="about" cols="30" rows="10"
                                         class="summernote" placeholder="About Doctor">{{ $doctors->about }}</textarea>
+                                        <p></p>
                                 </div>
                             </div>
                             <div class="card mb-3">

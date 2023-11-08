@@ -11,7 +11,7 @@
             <div class="breadcrumb-title">
                 <h2>About</h2>
                 <ul class="breadcrumb-menu list-style">
-                    <li><a href="index.html">Home </a></li>
+                    <li><a href="{{url('/about-us')}}">Home </a></li>
                     <li>About</li>
                 </ul>
             </div>
@@ -36,9 +36,9 @@
                     <div class="about-content">
                         <div class="content-title style1 mb-0">
                             <span><img src="assets/img/section-img.png" alt="Image">About Our Dispensary</span>
-                            <h2>We Provide High Quality And Certified Product</h2>
-                            <h6>All the Lorem Ipsum generators on the Internet tend to repeat defined chunks making this the first true generator on Internet.</h6>
-                            <p>There are many variations of passages of Lorem Ipsum available, bhe mred aln ine form, by injected humour, or randomised words which don't look even slilievable. If youre going to use a passage of lorem.</p>
+                            <h2>We assure Safe Diagnosis And Effective Product.</h2>
+                            {{-- <h6>All the Lorem Ipsum generators on the Internet tend to repeat defined chunks making this the first true generator on Internet.</h6> --}}
+                            <p>Our doctors only prescribe reputed and branded  ayurvedic medicine to the patients.we believe  in quality  products so only branded products are avaliable  in our website .we do not encourage  local products to the patients.The efficacy of the product may vary patient to patient according to their body constitution.</p>
                         </div>
                     </div>
                 </div>
@@ -164,9 +164,9 @@
                             <p>Ayurveda treatment may vary man to man. Thats why Maha Ayurveda can not give you 100% garantee on treatment and suitability of treatments.</p>
                         </div>
                         <div class="progressbar-wrap style2">
-                            <div class="progress-bar" data-percentage="72%">
+                            <div class="progress-bar" data-percentage="100%">
                                 <h4 class="progress-title-holder">
-                                    <span class="progress-title">Product Coverage</span>
+                                    <span class="progress-title">Registerd & Certified Doctors</span>
                                     <span class="progress-number-wrapper">
                                         <span class="progress-number-mark">
                                             <span class="percent"></span>
@@ -179,9 +179,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="progress-bar" data-percentage="80%">
+                            <div class="progress-bar" data-percentage="95%">
                                 <h4 class="progress-title-holder clearfix">
-                                    <span class="progress-title">Patient Satisfaction</span>
+                                    <span class="progress-title">Branded & Quality Medicine</span>
                                     <span class="progress-number-wrapper">
                                         <span class="progress-number-mark">
                                             <span class="percent"></span>
@@ -192,9 +192,9 @@
                                     <div class="progress-content"></div>
                                 </div>
                             </div>
-                            <div class="progress-bar" data-percentage="75%">
+                            <div class="progress-bar" data-percentage="80%">
                                 <h4 class="progress-title-holder clearfix">
-                                    <span class="progress-title">Doctor rating</span>
+                                    <span class="progress-title">Follow Up & Doorstep Delivery</span>
                                     <span class="progress-number-wrapper">
                                         <span class="progress-number-mark">
                                             <span class="percent"></span>
@@ -228,33 +228,33 @@
                 <div class="counter-card">
                     <div class="counter-text">
                         <div class="counter-num">
-                            <span class="odometer" data-count="37"></span>
+                            <span class="odometer" data-count="5"></span>
                         </div>
-                        <p>Awarded Licenses In Fourteen Atates </p>
+                        <p>Number of Doctors </p>
                     </div>
                 </div>
                 <div class="counter-card">
                     <div class="counter-text">
                         <div class="counter-num">
-                            <span class="odometer" data-count="768"></span>
+                            <span class="odometer" data-count="50"></span>
                         </div>
-                        <p>Cultivation Space Have been Built</p>
+                        <p>Number of Consultation</p>
                     </div>
                 </div>
                 <div class="counter-card">
                     <div class="counter-text">
                         <div class="counter-num">
-                            <span class="odometer" data-count="68"></span>
+                            <span class="odometer" data-count="50"></span>
                         </div>
-                        <p>Tons On Sale Product Available</p>
+                        <p>Number of Products</p>
                     </div>
                 </div>
                 <div class="counter-card">
                     <div class="counter-text">
                         <div class="counter-num">
-                            <span class="odometer" data-count="2389"></span>
+                            <span class="odometer" data-count="5000"></span>
                         </div>
-                        <p>Percent Growth In The Last Tow Years</p>
+                        <p>Visitors in Website</p>
                     </div>
                 </div>
             </div>
@@ -287,7 +287,7 @@
                         </div>
                         <div class="client-info">
                             <h3>Rama Saha</h3>
-                            <span>Kolkata</span>
+                            <span>Patipukur</span>
                         </div>
                     </div>
                     <div class="quote-icon">
@@ -313,7 +313,7 @@
                 </div>
             </div>
             <div class="testimonial-card style3">
-                <p class="client-quote">আমি বহুদিন ধরে অণ্ডকোষ সমস্যায় ভুগছিলাম, হাঁটা চলা করতে সমস্যা হত ও ব্যাথা অনুভব করতাম। আয়ুর্ভেদ চিকিৎসার পর থেকে আমি এখন হাঁটা চলা ও ব্যাথা পাওয়া থেকে মুক্তি পেয়েছি ।</p>
+                <p class="client-quote">আমি বহুদিন ধরে অণ্ডকোষ জনিত সমস্যায় ভুগছিলাম, হাঁটা চলা করতে সমস্যা হত  এবং ব্যাথা অনুভব করতাম। আয়ুর্বেদ চিকিৎসার পর থেকে আমি এখন হাঁটা চলা করতে পারি ও ব্যাথা পাওয়া থেকে মুক্তি পেয়েছি ।</p>
                 <div class="client-info-area">
                     <div class="client-info-wrap">
                         <div class="client-img">

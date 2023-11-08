@@ -13,7 +13,7 @@
                         <img src="{{asset('assets/img/ayurved/maha-ayurvedas.png')}}" alt="Image" width="250px">
                     </a>
                     <p class="comp-desc">
-                        Lorem ipsum dolor sit amet consc tetur adicing elit. Dolor emque dicta molest enim beatae ame consequ atur tempo pretium auctor nam.
+                        Maha Ayurvedas doctors only prescribe reputed and branded ayurvedic medicine to the patients.we believe in quality products so only branded products are avaliable in our website .
                     </p>
                     <ul class="social-profile style1 list-style">
                         <li>
@@ -75,23 +75,23 @@
                 <div class="footer-widget">
                     <h3 class="footer-widget-title">Explore Us</h3>
                     <ul class="footer-menu list-style">
-                        <li>
+                        {{-- <li>
                             <a href="shop-grid.html">
                             Blog
                             </a>
-                        </li>
+                        </li> --}}
                         <li>
-                            <a href="blog-right-sidebar.html">
+                            <a href="{{url('/doctors')}}">
                                 Doctors
                             </a>
                         </li>
                         <li>
-                            <a href="faq.html">
+                            <a href="{{url('/faq')}}">
                                 FAQ's
                             </a>
                         </li>
                         <li>
-                            <a href="privacy-policy.html">
+                            <a href="{{url('/contact')}}">
                             Contact
                             </a>
                         </li>

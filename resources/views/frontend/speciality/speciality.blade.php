@@ -178,7 +178,7 @@
                             <div class="col-xl-6">
                                 <div class="hw-card">
                                     <span class="hw-num">04</span>
-                                    <h3>Man to Man Treatment</h3>
+                                    <h3>Patient to Patient Treatment</h3>
                                     <p>At first we evaluate your body constitution and cause of the disease then we prescribe best quality medicine.</p>
                                 </div>
                             </div>

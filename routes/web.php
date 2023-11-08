@@ -20,6 +20,7 @@ use App\Http\Controllers\Frontend\AppoinmentController;
 use App\Http\Controllers\Frontend\CategoryController as FrontendCategoryController;
 use App\Http\Controllers\Frontend\ContactController;
 use App\Http\Controllers\Frontend\DoctorController as FrontendDoctorController;
+use App\Http\Controllers\Frontend\FAQController;
 use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Frontend\ShopController;
 use App\Http\Controllers\Frontend\SpecialityController;
@@ -57,6 +58,9 @@ Route::get('/doctors/{slug}',[AboutController::class,'doctor'])->name('front.abo
 
 
 Route::get('/speciality',[SpecialityController::class,'speciality'])->name('front.speciality');
+
+
+Route::get('/faq',[FAQController::class,'faq'])->name('front.faq');
 
 Route::get('/shop/{categorySlug?}',[ShopController::class,'index'])->name('front.shop');
 Route::get('/product/{slug}',[ShopController::class,'product'])->name('front.product');

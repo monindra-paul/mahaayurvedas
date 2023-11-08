@@ -81,8 +81,8 @@
        <div class="row">
            <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
             <div class="hero-content">
-                <h1 data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">Welcome to Maha Ayurvedas</h1>
-                <p data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">Ontrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard</p>
+                <h1 data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">Welcome to <br><span><img src="{{asset('assets/img/ayurved/maha-ayurvedas.png')}}" alt="" srcset=""></span></h1>
+                <p data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300" style="font-size:20px;">We are here to treat your diseases with the help of Indian traditional system of medicine.</p>
                 <a href="{{url('/shop')}}" class="btn style1" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">Shop Now</a>
             </div>
            </div>
@@ -97,14 +97,14 @@
         <div class="product-slider-one owl-carousel">
             <div class="product-card style4">
                 <div class="product-img">
-                    <img src="{{asset('assets/img/product/product-13.jpg')}}" alt="Image">
+                    <img src="{{asset('assets/img/ayurved/slide-1.svg')}}" alt="Image">
                     {{-- <button type="button" class="btn style2 add-cart">Add To Cart</button> --}}
                 </div>
                 
             </div>
             <div class="product-card style4">
                 <div class="product-img">
-                    <img src="{{asset('assets/img/product/product-14.jpg')}}" alt="Image">
+                    <img src="{{asset('assets/img/ayurved/slide-2.svg')}}" alt="Image">
                     {{-- <button type="button" class="btn style2 add-cart">Add To Cart</button> --}}
                 </div>
                 {{-- <div class="product-info-wrap">
@@ -117,7 +117,7 @@
             </div>
             <div class="product-card style4">
                 <div class="product-img">
-                    <img src="{{asset('assets/img/product/product-15.jpg')}}" alt="Image">
+                    <img src="{{asset('assets/img/ayurved/slide-4.svg')}}" alt="Image">
                     {{-- <button type="button" class="btn style2 add-cart">Add To Cart</button> --}}
                 </div>
                 {{-- <div class="product-info-wrap">
@@ -130,7 +130,7 @@
             </div>
             <div class="product-card style4">
                 <div class="product-img">
-                    <img src="{{asset('assets/img/product/product-16.jpg')}}" alt="Image">
+                    <img src="{{asset('assets/img/ayurved/slide-3.svg')}}" alt="Image">
                     {{-- <button type="button" class="btn style2 add-cart">Add To Cart</button> --}}
                 </div>
                 {{-- <div class="product-info-wrap">
@@ -215,7 +215,7 @@
        
         <div class="row pt-100 justify-content-center">
             <h2 class="text-center">
-                What Is Ayurved?
+                What Is Ayurveda?
             </h2>
             <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
                 <div class="promo-card style1">
@@ -224,7 +224,7 @@
                             <i class="ri-mental-health-line"></i>
                           
                         </span>
-                        <h3>Living Healthy Life</h3>
+                        <h3>Knowledge of Health</h3>
                     </div>
                     <p>Ayurveda  is a knowledge of leaving  healthy life. </p>
                 </div>
@@ -237,7 +237,18 @@
                         </span>
                         <h3>Pure Indian Science</h3>
                     </div>
-                    <p>It is a pure Indian science  which  helps to cure disease a holistic  way . </p>
+                    <p>It is a pure Indian science  which  helps to cure disease in a holistic  way . </p>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+                <div class="promo-card style1">
+                    <div class="promo-title">
+                        <span class="promo-icon">
+                            <i class="flaticon-herbal-2"></i>
+                        </span>
+                        <h3>Natural Medicine</h3>
+                    </div>
+                    <p>Only Natural Products are Used to treat Paitent.</p>
                 </div>
             </div>
             
@@ -294,7 +305,7 @@
                         <li>
                             <img src="assets/img/about/arrow-4.png" alt="Image" class="bn-shape-arrow">
                             <img src=" assets/img/about/shape-4.png" alt="Image" class="bn-shape">
-                            <i class="flaticon-lungs"></i>
+                            <i class="ri-leaf-fill"></i>
                         </li>
                         <li>
                             <img src="assets/img/about/arrow-5.png" alt="Image" class="bn-shape-arrow">
@@ -337,8 +348,8 @@
                 <div class="about-content">
                     <div class="content-title style1">
                         <span><img src="{{asset('assets/img/section-img.png')}}" alt="Image">About Maha Ayurveda</span>
-                        <h2>Our Speciality in Various Filed</h2>
-                        <p>Ayurveda treatment may vary man to man. Thats  why Maha Ayurveda can not give you 100% garantee on treatment and suitability of treatments.</p>
+                        <h2>Our Speciality in Various Filled</h2>
+                        <p>Ayurveda treatment may vary patient to patient. Thats  why Maha Ayurveda can not give you 100% garantee on treatment and suitability.</p>
                     </div>
                     <ul class="content-feature-list style1 list-style">
                         <li><i class="ri-logout-circle-r-line"></i>Online Video Consulting</li>
@@ -374,7 +385,7 @@
         <div class="row gx-5 align-items-center">
             <div class="col-xl-6">
                 <div class="benefit-img-wrap">
-                    <img src="assets/img/about/benefit-1.png" alt="Image">
+                    <img src="{{asset('assets/img/ayurved/speciality.svg')}}" alt="Image">
                 </div>
             </div>
             <div class="col-xl-6">
@@ -505,33 +516,33 @@
             <div class="counter-card">
                 <div class="counter-text">
                     <div class="counter-num">
-                        <span class="odometer" data-count="37"></span>
+                        <span class="odometer" data-count="5"></span>
                     </div>
-                    <p>Awarded Licenses In Fourteen Atates </p>
+                    <p>Number of Doctors </p>
                 </div>
             </div>
             <div class="counter-card">
                 <div class="counter-text">
                     <div class="counter-num">
-                        <span class="odometer" data-count="768"></span>
+                        <span class="odometer" data-count="50"></span>
                     </div>
-                    <p>Cultivation Space Have been Built</p>
+                    <p>Number of Consultation</p>
                 </div>
             </div>
             <div class="counter-card">
                 <div class="counter-text">
                     <div class="counter-num">
-                        <span class="odometer" data-count="68"></span>
+                        <span class="odometer" data-count="50"></span>
                     </div>
-                    <p>Tons On Sale Product Available</p>
+                    <p>Number of Products</p>
                 </div>
             </div>
             <div class="counter-card">
                 <div class="counter-text">
                     <div class="counter-num">
-                        <span class="odometer" data-count="2389"></span>
+                        <span class="odometer" data-count="5000"></span>
                     </div>
-                    <p>Percent Growth In The Last Tow Years</p>
+                    <p>Visitors in Website</p>
                 </div>
             </div>
         </div>
@@ -738,7 +749,7 @@
                         </div>
                         <div class="client-info">
                             <h3>Rama Saha</h3>
-                            <span>Kolkata</span>
+                            <span>Patipukur</span>
                         </div>
                     </div>
                     <div class="quote-icon">
@@ -764,7 +775,7 @@
                 </div>
             </div>
             <div class="testimonial-card style3">
-                <p class="client-quote">আমি বহুদিন ধরে অণ্ডকোষ সমস্যায় ভুগছিলাম, হাঁটা চলা করতে সমস্যা হত ও ব্যাথা অনুভব করতাম। আয়ুর্ভেদ চিকিৎসার পর থেকে আমি এখন হাঁটা চলা ও ব্যাথা পাওয়া থেকে মুক্তি পেয়েছি ।</p>
+                <p class="client-quote">আমি বহুদিন ধরে অণ্ডকোষ জনিত সমস্যায় ভুগছিলাম, হাঁটা চলা করতে সমস্যা হত  এবং ব্যাথা অনুভব করতাম। আয়ুর্বেদ চিকিৎসার পর থেকে আমি এখন হাঁটা চলা করতে পারি ও ব্যাথা পাওয়া থেকে মুক্তি পেয়েছি ।</p>
                 <div class="client-info-area">
                     <div class="client-info-wrap">
                         <div class="client-img">

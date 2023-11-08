@@ -52,6 +52,7 @@
                                     <label for="aboutdoctor">About Doctor</label>
                                     <textarea name="about" id="about" cols="30" rows="10"
                                         class="summernote" placeholder="About Doctor"></textarea>
+                                        <p></p>
                                 </div>
                             </div>
                             <div class="card mb-3">
@@ -75,6 +76,7 @@
                                                     To show a reduced price, move the product’s original price into Compare
                                                     at price. Enter a lower value into Price.
                                                 </p>
+                                                <p></p>
                                             </div>
                                         </div>
                                     </div>
