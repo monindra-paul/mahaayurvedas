@@ -47,7 +47,7 @@
     </section>
     <!-- About Sectin End -->
 
-    <!-- Product Category Section Start -->
+    {{-- <!-- Product Category Section Start -->
     <section class="product-cat-wrap pb-75">
         <div class="container">
             <div class="section-title style1 text-center mb-40">
@@ -106,7 +106,7 @@
             </div>
         </div>
     </section>
-    <!-- Product Section End -->
+    <!-- Product Section End --> --}}
 
 
 
@@ -160,8 +160,8 @@
                     <div class="simple-content">
                         <div class="content-title">
                             <span><img src="assets/img/section-img.png" alt="Image">Performance</span>
-                            <h2>We Ensures Safe Diagnosis And Effective Product</h2>
-                            <p>There are many variations of passages of Lorem Ipsum available, bhe mred aln ine form, by injected humour, or randomised words which don't look even slilievable. If youre going to use a passage of lorem.</p>
+                            <h2>We Assured Safe Diagnosis And Effective Product</h2>
+                            <p>Ayurveda treatment may vary man to man. Thats why Maha Ayurveda can not give you 100% garantee on treatment and suitability of treatments.</p>
                         </div>
                         <div class="progressbar-wrap style2">
                             <div class="progress-bar" data-percentage="72%">
@@ -270,103 +270,70 @@
     
     
 
-    <!-- Testimonial Section Start -->
-    <section class="testimonial-wrap ptb-100 bg-albastor">
-        <div class="container">
-            <div class="section-title style1 text-center mb-40">
-                <span><img src="assets/img/section-img.png" alt="Image">Testimonials</span>
-                <h2>What Our Patient Say About Us</h2>
-            </div>
-            <div class="testimonial-slider-one owl-carousel">
-                <div class="testimonial-card style3">
-                    <p class="client-quote">Occaecati cupiditate non provident simi que sunt in culpa  officia deunt mollitia anim id est laborum et dolorum fuga. Et harum quidem rerum facilis est etour expedita distinctio libero tempore dolor.</p>
-                    <div class="client-info-area">
-                        <div class="client-info-wrap">
-                            <div class="client-img">
-                                <img src="assets/img/testimonials/client-1.jpg" alt="Image">
-                            </div>
-                            <div class="client-info">
-                                <h3>Jim Morison</h3>
-                                <span>Director, BAT</span>
-                            </div>
-                        </div>
-                        <div class="quote-icon">
-                            <i class="flaticon-right-quote-sign"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card style3">
-                    <p class="client-quote">Occaecati cupiditate non provident simi que sunt in culpa  officia deunt mollitia anim id est laborum et dolorum fuga. Et harum quidem rerum facilis est etour expedita distinctio libero tempore dolor.</p>
-                    <div class="client-info-area">
-                        <div class="client-info-wrap">
-                            <div class="client-img">
-                                <img src="assets/img/testimonials/client-2.jpg" alt="Image">
-                            </div>
-                            <div class="client-info">
-                                <h3>Alex Cruis</h3>
-                                <span>CEO, IBAC</span>
-                            </div>
-                        </div>
-                        <div class="quote-icon">
-                            <i class="flaticon-right-quote-sign"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card style3">
-                    <p class="client-quote">Occaecati cupiditate non provident simi que sunt in culpa  officia deunt mollitia anim id est laborum et dolorum fuga. Et harum quidem rerum facilis est etour expedita distinctio libero tempore dolor.</p>
-                    <div class="client-info-area">
-                        <div class="client-info-wrap">
-                            <div class="client-img">
-                                <img src="assets/img/testimonials/client-3.jpg" alt="Image">
-                            </div>
-                            <div class="client-info">
-                                <h3>Tom Haris</h3>
-                                <span>Engineer, Olleo</span>
-                            </div>
-                        </div>
-                        <div class="quote-icon">
-                            <i class="flaticon-right-quote-sign"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card style3">
-                    <p class="client-quote">Occaecati cupiditate non provident simi que sunt in culpa  officia deunt mollitia anim id est laborum et dolorum fuga. Et harum quidem rerum facilis est etour expedita distinctio libero tempore dolor.</p>
-                    <div class="client-info-area">
-                        <div class="client-info-wrap">
-                            <div class="client-img">
-                                <img src="assets/img/testimonials/client-4.jpg" alt="Image">
-                            </div>
-                            <div class="client-info">
-                                <h3>Harry Jackson</h3>
-                                <span>Enterpreneur</span>
-                            </div>
-                        </div>
-                        <div class="quote-icon">
-                            <i class="flaticon-right-quote-sign"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card style3">
-                    <p class="client-quote">Occaecati cupiditate non provident simi que sunt in culpa  officia deunt mollitia anim id est laborum et dolorum fuga. Et harum quidem rerum facilis est etour expedita distinctio libero tempore dolor.</p>
-                    <div class="client-info-area">
-                        <div class="client-info-wrap">
-                            <div class="client-img">
-                                <img src="assets/img/testimonials/client-5.jpg" alt="Image">
-                            </div>
-                            <div class="client-info">
-                                <h3>Chris Haris</h3>
-                                <span>MD, ITec</span>
-                            </div>
-                        </div>
-                        <div class="quote-icon">
-                            <i class="flaticon-right-quote-sign"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
+ <!-- Testimonial Section Start -->
+ <section class="testimonial-wrap ptb-100 bg-albastor">
+    <div class="container">
+        <div class="section-title style1 text-center mb-40">
+            <span><img src="assets/img/section-img.png" alt="Image">Testimonials</span>
+            <h2>What Our Patient Say About Us</h2>
         </div>
-    </section>  
-    <!-- Testimonial Section End -->
+        <div class="testimonial-slider-one owl-carousel">
+            <div class="testimonial-card style3">
+                <p class="client-quote">I was suffering from pain incdf muscle just below the knee joint due to popletcal cyst. But after getting ayurveda treatment from Dr. Niladri Bose I am now 100% recovered from that situation. Thanks to Dr. Niladri Bose & Maha Ayurveda. .</p>
+                <div class="client-info-area">
+                    <div class="client-info-wrap">
+                        <div class="client-img">
+                            <img src="{{asset('assets/img/ayurved/re-pic.webp')}}" alt="Image">
+                        </div>
+                        <div class="client-info">
+                            <h3>Rama Saha</h3>
+                            <span>Kolkata</span>
+                        </div>
+                    </div>
+                    <div class="quote-icon">
+                        <i class="flaticon-right-quote-sign"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card style3">
+                <p class="client-quote">I have been suffering from recurrent tonsillitis since last few years. But with help of Ayurveda treatment under guidance of Dr. Niladri Bose now I am very much fine, & my pain is totally recovered. Thanks to Maha Ayurveda.</p>
+                <div class="client-info-area">
+                    <div class="client-info-wrap">
+                        <div class="client-img">
+                            <img src="{{asset('assets/img/ayurved/re-pic.webp')}}" alt="Image">
+                        </div>
+                        <div class="client-info">
+                            <h3>Moumita Saha</h3>
+                            <span>Kolkata</span>
+                        </div>
+                    </div>
+                    <div class="quote-icon">
+                        <i class="flaticon-right-quote-sign"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card style3">
+                <p class="client-quote">আমি বহুদিন ধরে অণ্ডকোষ সমস্যায় ভুগছিলাম, হাঁটা চলা করতে সমস্যা হত ও ব্যাথা অনুভব করতাম। আয়ুর্ভেদ চিকিৎসার পর থেকে আমি এখন হাঁটা চলা ও ব্যাথা পাওয়া থেকে মুক্তি পেয়েছি ।</p>
+                <div class="client-info-area">
+                    <div class="client-info-wrap">
+                        <div class="client-img">
+                            <img src="{{asset('assets/img/ayurved/re-pic.webp')}}" alt="Image">
+                        </div>
+                        <div class="client-info">
+                            <h3>Tom Haris</h3>
+                            <span>Engineer, Olleo</span>
+                        </div>
+                    </div>
+                    <div class="quote-icon">
+                        <i class="flaticon-right-quote-sign"></i>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>  
+<!-- Testimonial Section End -->
 
   
 

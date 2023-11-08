@@ -22,43 +22,34 @@
     <section class="contact-us-wrap pt-100 pb-75">
         <div class="container">
             <div class="section-title style1 text-center mb-40">
-                <span><img src="assets/img/section-img.png" alt="Image">Local Store</span>
-                <h2>Looking For Our Local Store</h2>
+                <span><img src="assets/img/section-img.png" alt="Image">Local Partners</span>
+                <h2>Looking For Our Offline Partners</h2>
             </div>
             <div class="row justify-content-center">
-                <div class="col-xl-4 col-lg-6 col-md-6">
+                <div class="col-xl-6 col-lg-6 col-md-6">
                     <div class="contact-item">
                         <img src="{{asset('assets/img/shape-6.png')}}" alt="Image" class="contact-shape">
-                        <h3>Address 1</h3>
+                        <h3>Dhana Lakshmi Ayurved Aushadhalay & Ayurvedic Clinic</h3>
                         <ul class="contact-info list-style">
-                            <li><i class="flaticon-pin"></i><p>1576 Gordon Street, Etihad, Georgia</p></li>
-                            <li><i class="flaticon-call-1"></i><a href="tel:9094630378">909-463-0378</a></li>
-                            <li><i class="flaticon-email-2"></i><a href="mailto:info@muva.com">info@muva.com</a></li>
+                            <li><i class="flaticon-pin"></i><p>32, Maslandapur - Tentulia Road, Maslandapur, Kolkata, West Bengal 743289</p></li>
+                            <li><i class="flaticon-call-1"></i><a href="tel:+919002510058">+91 90025 10058</a></li>
+                            <li><i class="flaticon-email-2"></i><a href="mailto:support@mahaayurvedas.com">support@mahaayurvedas.com</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-6 col-md-6">
+                <div class="col-xl-6 col-lg-6 col-md-6">
                     <div class="contact-item">
                         <img src="assets/img/shape-6.png" alt="Image" class="contact-shape">
-                        <h3>Address 2</h3>
+                        <h3>Mahadebarghya Ayurvedic Medicine
+                        </h3>
                         <ul class="contact-info list-style">
-                            <li><i class="flaticon-pin"></i><p>945 Ocala Street, Orlando , Florida</p></li>
-                            <li><i class="flaticon-call-1"></i><a href="tel:4074386389">407-438-6389</a></li>
-                            <li><i class="flaticon-email-2"></i><a href="mailto:hello@muva.com">hello@muva.com</a></li>
+                            <li><i class="flaticon-pin"></i><p>Post Office, 110, Sovabazar St, Sovabazar, Hatkhola, Kolkata, West Bengal 700005</p></li>
+                            <li><i class="flaticon-call-1"></i><a href="tel:+919836432543">+91 98364 32543</a></li>
+                            <li><i class="flaticon-email-2"></i><a href="mailto:support@mahaayurvedas.com">support@mahaayurvedas.com</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-6 col-md-6">
-                    <div class="contact-item">
-                        <img src="assets/img/shape-6.png" alt="Image" class="contact-shape">
-                        <h3>Address 3</h3>
-                        <ul class="contact-info list-style">
-                            <li><i class="flaticon-pin"></i><p>4674 Jarvis Street, Buffalo , New York</p></li>
-                            <li><i class="flaticon-call-1"></i><a href="tel:7164357147">716-435-7147</a></li>
-                            <li><i class="flaticon-email-2"></i><a href="mailto:info@muva.com">info@muva.com</a></li>
-                        </ul>
-                     </div>
-                </div>
+                
             </div>
         </div>
     </section>
@@ -97,7 +88,7 @@
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
-                                <div class="col-md-6 col-sm-6">
+                                <div class="col-md-12 col-sm-6">
                                     @if ($errors->has('phone'))
                                     <span class="text-danger">{{ $errors->first('phone') }}</span>
                                     @endif

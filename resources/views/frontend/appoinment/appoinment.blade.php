@@ -6,10 +6,10 @@
       <div class="breadcrumb-wrap bg-f br-1 mt-5 pt-5">
         <div class="container">
             <div class="breadcrumb-title">
-                <h2>About</h2>
+                <h2>Book Appointment</h2>
                 <ul class="breadcrumb-menu list-style">
                     <li><a href="index.html">Home </a></li>
-                    <li>About</li>
+                    <li>Book Appointment</li>
                 </ul>
             </div>
         </div>
@@ -67,8 +67,8 @@
             <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="300">
                 <div class="apply-form">
                     <div class="content-title style1">
-                        <h2>Apply For Treatment</h2>
-                        <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms.</p>
+                        <h2>Book Appointment</h2>
+                        <p>Ayurveda treatment may vary man to man. Thats why Maha Ayurveda can not give you 100% garantee on treatment and suitability of treatments.</p>
                     </div>
                     <form action="{{url('/')}}" method="post">
                         @csrf
@@ -136,52 +136,7 @@
                 </div>
             </div>
         </div>
-        <div class="row pt-100 justify-content-center">
-            <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
-                <div class="promo-card style1">
-                    <div class="promo-title">
-                        <span class="promo-icon">
-                            <i class="flaticon-herbal-2"></i>
-                        </span>
-                        <h3>Best Herbs</h3>
-                    </div>
-                    <p>There are many variaties of rem amet consec but the major have suffered alteration in some case. </p>
-                </div>
-            </div>
-            <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
-                <div class="promo-card style1">
-                    <div class="promo-title">
-                        <span class="promo-icon">
-                            <i class="flaticon-medicine"></i>
-                        </span>
-                        <h3>Best Product</h3>
-                    </div>
-                    <p>There are many variaties of rem amet consec but the major have suffered alteration in some case. </p>
-                </div>
-            </div>
-            <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
-                <div class="promo-card style1">
-                    <div class="promo-title">
-                        <span class="promo-icon">
-                            <i class="flaticon-shipped"></i>
-                        </span>
-                        <h3>Home Delivery</h3>
-                    </div>
-                    <p>There are many variaties of rem amet consec but the major have suffered alteration in some case. </p>
-                </div>
-            </div>
-            <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500">
-                <div class="promo-card style1">
-                    <div class="promo-title">
-                        <span class="promo-icon">
-                            <i class="flaticon-bong"></i>
-                        </span>
-                        <h3>Bong Medical</h3>
-                    </div>
-                    <p>There are many variaties of rem amet consec but the major have suffered alteration in some case. </p>
-                </div>
-            </div>
-        </div>
+        
     </div>
 </div>
 <!-- CTA Section End -->

@@ -74,8 +74,8 @@
 
   <!-- Hero Section Start -->
   <section class="hero-wrap style3">
-    <img src="{{asset('assets/img/hero/hero-shape-9.png')}}" alt="Image" class="hero-shape-one moveHorizontal">
-    <img src="{{asset('assets/img/hero/hero-shape-10.png')}}" alt="Image" class="hero-shape-two moveVertical">
+    <img src="{{asset('assets/img/ayurved/home-1.webp')}}" alt="Image" class="hero-shape-one moveHorizontal">
+    <img src="{{asset('assets/img/ayurved/basil.svg')}}" alt="Image" class="hero-shape-two moveVertical">
     <img src="{{asset('assets/img/hero/hero-shape-11.png')}}" alt="Image" class="hero-shape-three">
     <div class="container">
        <div class="row">
@@ -210,8 +210,40 @@
 <!-- Product Section End -->
 
 
-
-
+<div class="container">
+    <div class="row">
+       
+        <div class="row pt-100 justify-content-center">
+            <h2 class="text-center">
+                What Is Ayurved?
+            </h2>
+            <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+                <div class="promo-card style1">
+                    <div class="promo-title">
+                        <span class="promo-icon">
+                            <i class="ri-mental-health-line"></i>
+                          
+                        </span>
+                        <h3>Living Healthy Life</h3>
+                    </div>
+                    <p>Ayurveda  is a knowledge of leaving  healthy life. </p>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+                <div class="promo-card style1">
+                    <div class="promo-title">
+                        <span class="promo-icon">
+                            <i class="flaticon-herbal-2"></i>
+                        </span>
+                        <h3>Pure Indian Science</h3>
+                    </div>
+                    <p>It is a pure Indian science  which  helps to cure disease a holistic  way . </p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
 
 
 
@@ -348,19 +380,19 @@
             <div class="col-xl-6">
                 <div class="benefit-content">
                     <div class="content-title style1">
-                        <span><img src="assets/img/section-img.png" alt="Image">Benefit You'll Get</span>
-                        <h2>There Are Many Benefits Of Using Medical Cannabies</h2>
+                        <span><img src="assets/img/section-img.png" alt="Image">Speciality</span>
+                        <h2>Speciality of Maha Ayurveda</h2>
                     </div>
                     <div class="row">
                         <div class="col-lg-6 col-md-6">
                             <div class="product-cat-card style2">
                                 <img class="cat-card-shape" src="assets/img/shape-1.png" alt="Image">
                                 <div class="product-cat-icon">
-                                    <i class="flaticon-meditation"></i>
+                                    <i class="ri-nurse-fill"></i>
                                 </div>
                                 <div class="product-cat-info">
-                                    <h3><a href="shop-right-sidebar.html">Promote Relaxation</a></h3>
-                                    <p>There are many variaties of amesum available, but the majority have suffered alteration in some.</p>
+                                    <h3><a href="shop-right-sidebar.html">Qualified Doctors</a></h3>
+                                    <p>Only Verified & Qualified Doctors from BAMS.</p>
                                 </div>
                             </div>
                         </div>
@@ -368,11 +400,11 @@
                             <div class="product-cat-card style2">
                                 <img class="cat-card-shape" src="assets/img/shape-1.png" alt="Image">
                                 <div class="product-cat-icon">
-                                    <i class="flaticon-back-1"></i>
+                                    <i class="ri-base-station-line"></i>
                                 </div>
                                 <div class="product-cat-info">
-                                    <h3><a href="shop-right-sidebar.html">Relieves pain</a></h3>
-                                    <p>There are many variaties of amesum available, but the majority have suffered alteration in some.</p>
+                                    <h3><a href="shop-right-sidebar.html">No Communication Barrier</a></h3>
+                                    <p>You can communicate with our Doctors in 3 different languages acc to your choice.</p>
                                 </div>
                             </div>
                         </div>
@@ -383,8 +415,8 @@
                                     <i class="flaticon-herbal"></i>
                                 </div>
                                 <div class="product-cat-info">
-                                    <h3><a href="shop-right-sidebar.html">Increase Apetite</a></h3>
-                                    <p>There are many variaties of amesum available, but the majority have suffered alteration in some.</p>
+                                    <h3><a href="shop-right-sidebar.html">Availability of Any Mode</a></h3>
+                                    <p>Online appointment and offline appointment both options are available.</p>
                                 </div>
                             </div>
                         </div>
@@ -395,8 +427,8 @@
                                 <i class="flaticon-massage"></i>
                                 </div>
                                 <div class="product-cat-info">
-                                    <h3><a href="shop-right-sidebar.html">Remove Headache</a></h3>
-                                    <p>There are many variaties of amesum available, but the majority have suffered alteration in some.</p>
+                                    <h3><a href="shop-right-sidebar.html">Man to Man Treatment</a></h3>
+                                    <p>At first we evaluate your body constitution and cause of the disease then we prescribe best quality medicine.</p>
                                 </div>
                             </div>
                         </div>
@@ -515,8 +547,8 @@
             <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="300">
                 <div class="apply-form">
                     <div class="content-title style1">
-                        <h2>Apply For Treatment</h2>
-                        <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms.</p>
+                        <h2>Book Appointment</h2>
+                        <p>Ayurveda treatment may vary man to man. Thats why Maha Ayurveda can not give you 100% garantee on treatment and suitability of treatments.</p>
                     </div>
                     <form action="{{url('/')}}" method="post">
                         @csrf
@@ -698,15 +730,15 @@
         </div>
         <div class="testimonial-slider-one owl-carousel">
             <div class="testimonial-card style3">
-                <p class="client-quote">Occaecati cupiditate non provident simi que sunt in culpa  officia deunt mollitia anim id est laborum et dolorum fuga. Et harum quidem rerum facilis est etour expedita distinctio libero tempore dolor.</p>
+                <p class="client-quote">I was suffering from pain incdf muscle just below the knee joint due to popletcal cyst. But after getting ayurveda treatment from Dr. Niladri Bose I am now 100% recovered from that situation. Thanks to Dr. Niladri Bose & Maha Ayurveda. .</p>
                 <div class="client-info-area">
                     <div class="client-info-wrap">
                         <div class="client-img">
-                            <img src="assets/img/testimonials/client-1.jpg" alt="Image">
+                            <img src="{{asset('assets/img/ayurved/re-pic.webp')}}" alt="Image">
                         </div>
                         <div class="client-info">
-                            <h3>Jim Morison</h3>
-                            <span>Director, BAT</span>
+                            <h3>Rama Saha</h3>
+                            <span>Kolkata</span>
                         </div>
                     </div>
                     <div class="quote-icon">
@@ -715,15 +747,15 @@
                 </div>
             </div>
             <div class="testimonial-card style3">
-                <p class="client-quote">Occaecati cupiditate non provident simi que sunt in culpa  officia deunt mollitia anim id est laborum et dolorum fuga. Et harum quidem rerum facilis est etour expedita distinctio libero tempore dolor.</p>
+                <p class="client-quote">I have been suffering from recurrent tonsillitis since last few years. But with help of Ayurveda treatment under guidance of Dr. Niladri Bose now I am very much fine, & my pain is totally recovered. Thanks to Maha Ayurveda.</p>
                 <div class="client-info-area">
                     <div class="client-info-wrap">
                         <div class="client-img">
-                            <img src="assets/img/testimonials/client-2.jpg" alt="Image">
+                            <img src="{{asset('assets/img/ayurved/re-pic.webp')}}" alt="Image">
                         </div>
                         <div class="client-info">
-                            <h3>Alex Cruis</h3>
-                            <span>CEO, IBAC</span>
+                            <h3>Moumita Saha</h3>
+                            <span>Kolkata</span>
                         </div>
                     </div>
                     <div class="quote-icon">
@@ -732,11 +764,11 @@
                 </div>
             </div>
             <div class="testimonial-card style3">
-                <p class="client-quote">Occaecati cupiditate non provident simi que sunt in culpa  officia deunt mollitia anim id est laborum et dolorum fuga. Et harum quidem rerum facilis est etour expedita distinctio libero tempore dolor.</p>
+                <p class="client-quote">আমি বহুদিন ধরে অণ্ডকোষ সমস্যায় ভুগছিলাম, হাঁটা চলা করতে সমস্যা হত ও ব্যাথা অনুভব করতাম। আয়ুর্ভেদ চিকিৎসার পর থেকে আমি এখন হাঁটা চলা ও ব্যাথা পাওয়া থেকে মুক্তি পেয়েছি ।</p>
                 <div class="client-info-area">
                     <div class="client-info-wrap">
                         <div class="client-img">
-                            <img src="assets/img/testimonials/client-3.jpg" alt="Image">
+                            <img src="{{asset('assets/img/ayurved/re-pic.webp')}}" alt="Image">
                         </div>
                         <div class="client-info">
                             <h3>Tom Haris</h3>
@@ -748,40 +780,7 @@
                     </div>
                 </div>
             </div>
-            <div class="testimonial-card style3">
-                <p class="client-quote">Occaecati cupiditate non provident simi que sunt in culpa  officia deunt mollitia anim id est laborum et dolorum fuga. Et harum quidem rerum facilis est etour expedita distinctio libero tempore dolor.</p>
-                <div class="client-info-area">
-                    <div class="client-info-wrap">
-                        <div class="client-img">
-                            <img src="assets/img/testimonials/client-4.jpg" alt="Image">
-                        </div>
-                        <div class="client-info">
-                            <h3>Harry Jackson</h3>
-                            <span>Enterpreneur</span>
-                        </div>
-                    </div>
-                    <div class="quote-icon">
-                        <i class="flaticon-right-quote-sign"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-card style3">
-                <p class="client-quote">Occaecati cupiditate non provident simi que sunt in culpa  officia deunt mollitia anim id est laborum et dolorum fuga. Et harum quidem rerum facilis est etour expedita distinctio libero tempore dolor.</p>
-                <div class="client-info-area">
-                    <div class="client-info-wrap">
-                        <div class="client-img">
-                            <img src="assets/img/testimonials/client-5.jpg" alt="Image">
-                        </div>
-                        <div class="client-info">
-                            <h3>Chris Haris</h3>
-                            <span>MD, ITec</span>
-                        </div>
-                    </div>
-                    <div class="quote-icon">
-                        <i class="flaticon-right-quote-sign"></i>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </div>
 </section>  

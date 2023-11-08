@@ -40,12 +40,12 @@
                        </div>
                         <p>{!! $doctors->about !!}</p>
                         
-                        <h4>
+                        <h5>
                             <span>₹ {{$doctors->price}}</span> 
                             @if($doctors->compare_price > 0)
                             <s><span class="discount">₹ {{$doctors->compare_price}}</span></s>
                             @endif
-                        </h4>
+                        </h5>
                         <ul class="social-profile style3 list-style">
                             <a href="{{route('index.appoinment')}}" class="btn style2 add-cart">Book Appointment</a>
                         </ul>

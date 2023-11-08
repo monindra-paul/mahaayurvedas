@@ -9,16 +9,16 @@
     <div class="breadcrumb-wrap bg-f br-4">
         <div class="container">
             <div class="breadcrumb-title">
-                <h2>Service</h2>
+                <h2>Speciality</h2>
                 <ul class="breadcrumb-menu list-style">
                     <li><a href="index.html">Home</a></li>
-                    <li>Service</li>
+                    <li>Speciality</li>
                 </ul>
             </div>
         </div>
     </div>
     <!-- Breadcrumb End -->
-
+{{-- 
     <!-- Service Section Start -->
     <section class="product-cat-wrap ptb-100">
         <div class="container">
@@ -141,7 +141,7 @@
             </ul>
         </div>
     </section>
-    <!-- Service Section End -->
+    <!-- Service Section End --> --}}
 
     <!-- How We Work Section Start -->
     <section class="hw-wrap ptb-100 pb-75 bg-albastor">
@@ -150,36 +150,36 @@
                 <div class="col-xxl-6 col-xl-7 col-lg-6 order-xxl-1 order-xl-1 order-lg-1 order-md-2 order-2">
                     <div class="hw-content">
                         <div class="content-title style1 mb-40">
-                            <span><img src="assets/img/section-img.png" alt="Image">How We Work</span>
-                            <h2>Muva Use Marijuanna For Medical Treatment </h2>
+                            <span><img src="assets/img/section-img.png" alt="Image">Speciality</span>
+                            <h2>Speciality of Maha Ayurveda</h2>
                         </div>
                         <div class="row">
                             <div class="col-xl-6">
                                 <div class="hw-card">
                                     <span class="hw-num">01</span>
-                                    <h3>Book Appointment</h3>
-                                    <p>On the other hand nnounce with rightous dignation amet.</p>
+                                    <h3>Qualified Doctors</h3>
+                                    <p>Only Verified & Qualified Doctors from BAMS.</p>
                                 </div>
                             </div>
                             <div class="col-xl-6">
                                 <div class="hw-card">
                                     <span class="hw-num">02</span>
-                                    <h3>Conduct Checkup</h3>
-                                    <p>On the other hand nnounce with rightous dignation amet.</p>
+                                    <h3>No Communication Barrier</h3>
+                                    <p>You can communicate with our Doctors in 3 different languages acc to your choice.</p>
                                 </div>
                             </div>
                             <div class="col-xl-6">
                                 <div class="hw-card">
                                     <span class="hw-num">03</span>
-                                    <h3>Perform Treatment</h3>
-                                    <p>On the other hand nnounce with rightous dignation amet.</p>
+                                    <h3>Availability of Any Mode</h3>
+                                    <p>Online appointment and offline appointment both options are available.</p>
                                 </div>
                             </div>
                             <div class="col-xl-6">
                                 <div class="hw-card">
                                     <span class="hw-num">04</span>
-                                    <h3>Prescribe Payment</h3>
-                                    <p>On the other hand nnounce with rightous dignation amet.</p>
+                                    <h3>Man to Man Treatment</h3>
+                                    <p>At first we evaluate your body constitution and cause of the disease then we prescribe best quality medicine.</p>
                                 </div>
                             </div>
                         </div>
