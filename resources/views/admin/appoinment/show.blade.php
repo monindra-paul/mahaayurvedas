@@ -128,10 +128,11 @@ function appdate(date) {
         var phone = "+91{{$appoinments->mobile}}";
         var name = "{{$appoinments->name}}";
         var age = "{{$appoinments->age}}";
+        var doctor = "{{$appoinments->doctor}}";
         var email = "{{$appoinments->email}}";
         var address = "{{$appoinments->address}}";
         var date = "{{$appoinments->date}}";
-        var qr = "monindrap@fbl";
+        var upi = "monindrap@fbl";
        
 
         // var name = document.getElementById('name').value;
@@ -139,12 +140,10 @@ function appdate(date) {
 
         var url = "https://wa.me/" + phone + "?text="
 
-        +"*Name :* " +name+"%0a"
-        +"*Age :* " +age+"%0a"
-        +"*Email :* " +email+"%0a"
-        +"*Address :* " +address+"%0a"
-        +"*Qr :* " +qr+"%0a"
-        +"*Date :* " +date+"%0a";
+       + "Thank you " +name+ " for Your Booking in Maha Ayurvedas Online Appointment."+"Your Consulting " +"*Doctor is :* " +doctor+"%0a"+"."+"Your Consulting time is " +date+"%0a."+ "Please verify your payment and confirm your availability. Pay the ₹ 499/- only in under UPI Id."
+       
+        +"*UPI Id :* " +upi+"%0a";
+       
        
 
         window.open(url, '_blank').focus();
