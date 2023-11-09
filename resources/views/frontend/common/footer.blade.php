@@ -9,7 +9,7 @@
         <div class="row pt-100 pb-75">
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                 <div class="footer-widget">
-                    <a href="index.html" class="footer-logo">
+                    <a href="{{url('/')}}" class="footer-logo">
                         <img src="{{asset('assets/img/ayurved/maha-ayurvedas.png')}}" alt="Image" width="250px">
                     </a>
                     <p class="comp-desc">
@@ -17,7 +17,7 @@
                     </p>
                     <ul class="social-profile style1 list-style">
                         <li>
-                            <a target="_blank" href="https://facebook.com">
+                            <a target="_blank" href="https://www.facebook.com/mahaayurvedas">
                                 <i class="ri-facebook-fill"></i>
                             </a>
                         </li>
@@ -31,11 +31,7 @@
                                 <i class="ri-instagram-line"></i>
                             </a>
                         </li>
-                        <li>
-                            <a target="_blank" href="https://linkedin.com">
-                                <i class="ri-linkedin-fill"></i>
-                            </a>
-                        </li>
+                        
                     </ul>
                 </div>
             </div>

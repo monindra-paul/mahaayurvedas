@@ -276,10 +276,10 @@
                 </div>
                 <div class="benefit-card style1">
                     <h3>Minimum Side Effects</h3>
-                     <p>Minimum side effects of any cure from natural ayurveda.</p>
+                     <p>Steroid free pure ayurvedic medicine.</p>
                 </div>
                 <div class="benefit-card style1">
-                    <h3>Rejuvinate</h3>
+                    <h3>Rejuvinatiton</h3>
                     <p>Rejuvinate your body and your mind.</p>
                 </div>
             </div>
@@ -295,12 +295,12 @@
                         <li>
                             <img src="assets/img/about/arrow-2.png" alt="Image" class="bn-shape-arrow">
                             <img src=" assets/img/about/shape-2.png" alt="Image" class="bn-shape">
-                            <i class="ri-virus-line"></i>
+                            <i class="fa-light fa-bacterium" style="color: current;"></i>
                         </li>
                         <li>
                             <img src="assets/img/about/arrow-3.png" alt="Image" class="bn-shape-arrow">
                             <img src=" assets/img/about/shape-3.png" alt="Image" class="bn-shape">
-                            <i class="flaticon-heartbeat"></i>
+                            <i class="fa-light fa-mortar-pestle" style="color: current;"></i>
                         </li>
                         <li>
                             <img src="assets/img/about/arrow-4.png" alt="Image" class="bn-shape-arrow">
@@ -315,7 +315,7 @@
                         <li>
                             <img src="assets/img/about/arrow-6.png" alt="Image" class="bn-shape-arrow">
                             <img src=" assets/img/about/shape-6.png" alt="Image" class="bn-shape">
-                            <i class="ri-psychotherapy-line"></i>
+                            <i class="fa-regular fa-hand-holding-medical" style="color:current;"></i>
                         </li>
                     </ul>
                 </div>
@@ -326,12 +326,12 @@
                      <p>Steroid free indian system of medicine.</p>
                 </div>
                 <div class="benefit-card">
-                    <h3>Tridosha</h3>
+                    <h3>Balance Tridosha</h3>
                     <p>Balance your tridosha according to your need.</p>
                 </div>
                 <div class="benefit-card">
                     <h3>Build your health</h3>
-                     <p>Medicine works systematically and build your health.</p>
+                     <p>Medicine works systematically to build your health.</p>
                 </div>
             </div>
         </div>
@@ -438,7 +438,7 @@
                                 <i class="flaticon-massage"></i>
                                 </div>
                                 <div class="product-cat-info">
-                                    <h3><a href="shop-right-sidebar.html">Man to Man Treatment</a></h3>
+                                    <h3><a href="shop-right-sidebar.html">Patient to Patient Treatment</a></h3>
                                     <p>At first we evaluate your body constitution and cause of the disease then we prescribe best quality medicine.</p>
                                 </div>
                             </div>
@@ -462,7 +462,7 @@
            <div class="col-md-8">
                <div class="section-title style1">
                     <span><img src="{{asset('assets/img/section-img.png')}}" alt="Image">Our Shop</span>
-                    <h2>Our Products</h2>
+                    <h2>Product Range</h2>
                </div>
            </div>
            <div class="col-md-4 text-md-end sm-none">
@@ -741,7 +741,7 @@
         </div>
         <div class="testimonial-slider-one owl-carousel">
             <div class="testimonial-card style3">
-                <p class="client-quote">I was suffering from pain incdf muscle just below the knee joint due to popletcal cyst. But after getting ayurveda treatment from Dr. Niladri Bose I am now 100% recovered from that situation. Thanks to Dr. Niladri Bose & Maha Ayurveda. .</p>
+                <p class="client-quote">I was suffering from pain calf muscle just below the knee joint due to popliteal cyst. But after getting ayurveda treatment from Dr. Niladri Bose I am now 100% recovered from that situation. Thanks to Dr. Niladri Bose & Maha Ayurveda.</p>
                 <div class="client-info-area">
                     <div class="client-info-wrap">
                         <div class="client-img">
@@ -749,7 +749,7 @@
                         </div>
                         <div class="client-info">
                             <h3>Rama Saha</h3>
-                            <span>Patipukur</span>
+                            <span>Patipukur, Kolkata</span>
                         </div>
                     </div>
                     <div class="quote-icon">

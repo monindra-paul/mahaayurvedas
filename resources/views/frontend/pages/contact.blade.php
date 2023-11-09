@@ -26,29 +26,31 @@
                 <h2>Looking For Our Offline Partners</h2>
             </div>
             <div class="row justify-content-center">
-                <div class="col-xl-6 col-lg-6 col-md-6">
-                    <div class="contact-item">
-                        <img src="{{asset('assets/img/shape-6.png')}}" alt="Image" class="contact-shape">
-                        <h3>Dhana Lakshmi Ayurved Aushadhalay & Ayurvedic Clinic</h3>
-                        <ul class="contact-info list-style">
-                            <li><i class="flaticon-pin"></i><p>32, Maslandapur - Tentulia Road, Maslandapur, Kolkata, West Bengal 743289</p></li>
-                            <li><i class="flaticon-call-1"></i><a href="tel:+919002510058">+91 90025 10058</a></li>
-                            <li><i class="flaticon-email-2"></i><a href="mailto:support@mahaayurvedas.com">support@mahaayurvedas.com</a></li>
-                        </ul>
-                    </div>
-                </div>
+
                 <div class="col-xl-6 col-lg-6 col-md-6">
                     <div class="contact-item">
                         <img src="assets/img/shape-6.png" alt="Image" class="contact-shape">
                         <h3>Mahadebarghya Ayurvedic Medicine
                         </h3>
                         <ul class="contact-info list-style">
-                            <li><i class="flaticon-pin"></i><p>Post Office, 110, Sovabazar St, Sovabazar, Hatkhola, Kolkata, West Bengal 700005</p></li>
+                            <li><i class="flaticon-pin"></i><p><a target="_blank" href="https://maps.app.goo.gl/pnzuUUF95NNXHus28">Post Office, 110, Sovabazar St, Sovabazar, Hatkhola, Kolkata, West Bengal 700005</a></p></li>
                             <li><i class="flaticon-call-1"></i><a href="tel:+919836432543">+91 98364 32543</a></li>
                             <li><i class="flaticon-email-2"></i><a href="mailto:support@mahaayurvedas.com">support@mahaayurvedas.com</a></li>
                         </ul>
                     </div>
                 </div>
+                <div class="col-xl-6 col-lg-6 col-md-6">
+                    <div class="contact-item">
+                        <img src="{{asset('assets/img/shape-6.png')}}" alt="Image" class="contact-shape">
+                        <h3>Dhana Lakshmi Ayurved Aushadhalay & Ayurvedic Clinic</h3>
+                        <ul class="contact-info list-style">
+                            <li><i class="flaticon-pin"></i><p><a target="_blank" href="https://maps.app.goo.gl/oGqAAxG2MtnkaLQi7">32, Maslandapur - Tentulia Road, Maslandapur, Kolkata, West Bengal 743289</a></p></li>
+                            <li><i class="flaticon-call-1"></i><a href="tel:+919002510058">+91 90025 10058</a></li>
+                            <li><i class="flaticon-email-2"></i><a href="mailto:support@mahaayurvedas.com">support@mahaayurvedas.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
                 
             </div>
         </div>

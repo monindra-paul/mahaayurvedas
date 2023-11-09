@@ -21,49 +21,8 @@
         <img src="assets/img/counter-shape-1.png" alt="Image">
     </div>
     <div class="container">
-        <div class="counter-card-wrap  pb-75">
-            <div class="counter-card">
-                <div class="counter-text">
-                    <div class="counter-num">
-                        <span class="odometer" data-count="37"></span>
-                    </div>
-                    <p>Awarded Licenses In Fourteen Atates </p>
-                </div>
-            </div>
-            <div class="counter-card">
-                <div class="counter-text">
-                    <div class="counter-num">
-                        <span class="odometer" data-count="768"></span>
-                    </div>
-                    <p>Cultivation Space Have been Built</p>
-                </div>
-            </div>
-            <div class="counter-card">
-                <div class="counter-text">
-                    <div class="counter-num">
-                        <span class="odometer" data-count="68"></span>
-                    </div>
-                    <p>Tons On Sale Product Available</p>
-                </div>
-            </div>
-            <div class="counter-card">
-                <div class="counter-text">
-                    <div class="counter-num">
-                        <span class="odometer" data-count="2389"></span>
-                    </div>
-                    <p>Percent Growth In The Last Tow Years</p>
-                </div>
-            </div>
-        </div>
+       
         <div class="row">
-            <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
-                <div class="video-wrap bg-f style2 video-bg-2">
-                    <a class="play-now" data-fancybox="" href="https://www.youtube.com/watch?v=UNSSuTSQI9I">
-                        <i class="ri-play-fill"></i>
-                        <span class="ripple"></span>
-                    </a>
-                </div>
-            </div>
             <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="300">
                 <div class="apply-form">
                     <div class="content-title style1">
@@ -135,7 +94,51 @@
                     </form>
                 </div>
             </div>
+            <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
+                <div class="video-wrap bg-f style2 video-bg-2">
+                    <a class="play-now" data-fancybox="" href="https://www.youtube.com/watch?v=UNSSuTSQI9I">
+                        <i class="ri-play-fill"></i>
+                        <span class="ripple"></span>
+                    </a>
+                </div>
+            </div>
+           
         </div>
+
+        {{-- <div class="counter-card-wrap  pb-75">
+            <div class="counter-card">
+                <div class="counter-text">
+                    <div class="counter-num">
+                        <span class="odometer" data-count="37"></span>
+                    </div>
+                    <p>Awarded Licenses In Fourteen Atates </p>
+                </div>
+            </div>
+            <div class="counter-card">
+                <div class="counter-text">
+                    <div class="counter-num">
+                        <span class="odometer" data-count="768"></span>
+                    </div>
+                    <p>Cultivation Space Have been Built</p>
+                </div>
+            </div>
+            <div class="counter-card">
+                <div class="counter-text">
+                    <div class="counter-num">
+                        <span class="odometer" data-count="68"></span>
+                    </div>
+                    <p>Tons On Sale Product Available</p>
+                </div>
+            </div>
+            <div class="counter-card">
+                <div class="counter-text">
+                    <div class="counter-num">
+                        <span class="odometer" data-count="2389"></span>
+                    </div>
+                    <p>Percent Growth In The Last Tow Years</p>
+                </div>
+            </div>
+        </div> --}}
         
     </div>
 </div>

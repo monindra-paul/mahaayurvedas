@@ -95,6 +95,13 @@
                             <h3>{{$doctor->name}}</h3>
                             <span>{{$doctor->designation}}</span>
                         </div>
+                        <h5 class="text-center">
+                            <span>Doctor Fee:</span>
+                            <span style="color:#ff7b00;">₹ {{$doctor->price}}</span> 
+                            @if($doctor->compare_price > 0)
+                            <s><span class="discount">₹ {{$doctor->compare_price}}</span></s>
+                            @endif
+                        </h5>
                     </div>
                 </div>
                 @endforeach

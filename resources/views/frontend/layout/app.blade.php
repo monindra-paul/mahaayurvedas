@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
         <link rel="stylesheet" href="{{asset('assets/css/flaticon.css')}}">
         <link rel="stylesheet" href="{{asset('assets/css/remixicon.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/css/font-awesome-pro.css')}}">
         <link rel="stylesheet" href="{{asset('assets/css/owl.carousel.min.css')}}">
         <link rel="stylesheet" href="{{asset('assets/css/swiper-min.css')}}">
         <link rel="stylesheet" href="{{asset('assets/css/fancybox.css')}}">
@@ -17,6 +18,7 @@
         <link rel="stylesheet" href="{{asset('assets/css/aos.css')}}">
         <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
         <link rel="stylesheet" href="{{asset('assets/css/responsive.css')}}">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <title>Maha Ayurvedas | The exceptional ayurveda platform for everyone</title>
         <link rel="icon" type="image/png" href="{{asset('assets/img/ayurved/maha-512.png')}}">
     </head>

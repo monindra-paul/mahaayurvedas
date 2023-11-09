@@ -29,7 +29,7 @@
                             <img src="assets/img/about/about-shape-6.png" alt="Iamge" class="bounce">
                         </div>
                         <img src="assets/img/ayurved/about-new.png" alt="Image">
-                        <div class="discunt-price">25% <br>off</div>
+                        <div class="discunt-price">10% <br>off</div>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -279,7 +279,7 @@
         </div>
         <div class="testimonial-slider-one owl-carousel">
             <div class="testimonial-card style3">
-                <p class="client-quote">I was suffering from pain incdf muscle just below the knee joint due to popletcal cyst. But after getting ayurveda treatment from Dr. Niladri Bose I am now 100% recovered from that situation. Thanks to Dr. Niladri Bose & Maha Ayurveda. .</p>
+                <p class="client-quote">I was suffering from pain calf muscle just below the knee joint due to popliteal cyst. But after getting ayurveda treatment from Dr. Niladri Bose I am now 100% recovered from that situation. Thanks to Dr. Niladri Bose & Maha Ayurveda.</p>
                 <div class="client-info-area">
                     <div class="client-info-wrap">
                         <div class="client-img">
@@ -287,7 +287,7 @@
                         </div>
                         <div class="client-info">
                             <h3>Rama Saha</h3>
-                            <span>Patipukur</span>
+                            <span>Patipukur, Kolkata</span>
                         </div>
                     </div>
                     <div class="quote-icon">
