@@ -28,7 +28,7 @@
                         <div class="about-shape-one">
                             <img src="assets/img/about/about-shape-6.png" alt="Iamge" class="bounce">
                         </div>
-                        <img src="assets/img/about/about-img-3.png" alt="Image">
+                        <img src="assets/img/ayurved/about-new.png" alt="Image">
                         <div class="discunt-price">25% <br>off</div>
                     </div>
                 </div>
@@ -283,7 +283,7 @@
                 <div class="client-info-area">
                     <div class="client-info-wrap">
                         <div class="client-img">
-                            <img src="{{asset('assets/img/ayurved/re-pic.webp')}}" alt="Image">
+                            <img src="{{asset('assets/img/ayurved/rama-saha.jpeg')}}" alt="Image">
                         </div>
                         <div class="client-info">
                             <h3>Rama Saha</h3>

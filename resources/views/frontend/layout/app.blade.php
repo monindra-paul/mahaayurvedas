@@ -17,7 +17,6 @@
         <link rel="stylesheet" href="{{asset('assets/css/aos.css')}}">
         <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
         <link rel="stylesheet" href="{{asset('assets/css/responsive.css')}}">
-        <link rel="stylesheet" href="{{asset('assets/css/dark-theme.css')}}">
         <title>Maha Ayurvedas | The exceptional ayurveda platform for everyone</title>
         <link rel="icon" type="image/png" href="{{asset('assets/img/ayurved/maha-512.png')}}">
     </head>

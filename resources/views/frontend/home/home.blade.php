@@ -348,7 +348,7 @@
                 <div class="about-content">
                     <div class="content-title style1">
                         <span><img src="{{asset('assets/img/section-img.png')}}" alt="Image">About Maha Ayurveda</span>
-                        <h2>Our Speciality in Various Filled</h2>
+                        <h2>Our Speciality in Various Fields</h2>
                         <p>Ayurveda treatment may vary patient to patient. Thats  why Maha Ayurveda can not give you 100% garantee on treatment and suitability.</p>
                     </div>
                     <ul class="content-feature-list style1 list-style">
@@ -369,7 +369,7 @@
                     <div class="about-shape-three">
                         <img src="assets/img/about/about-shape-5.png" alt="Image" class="rotate">
                     </div>
-                    <img src="assets/img/about/about-img-2.png" alt="Image">
+                    <img src="{{asset('assets/img/ayurved/home-various-field.webp')}}" alt="Image">
                 </div>
             </div>
         </div>
@@ -745,7 +745,7 @@
                 <div class="client-info-area">
                     <div class="client-info-wrap">
                         <div class="client-img">
-                            <img src="{{asset('assets/img/ayurved/re-pic.webp')}}" alt="Image">
+                            <img src="{{asset('assets/img/ayurved/rama-saha.jpeg')}}" alt="Image">
                         </div>
                         <div class="client-info">
                             <h3>Rama Saha</h3>

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="{{asset('admin/plugins/select2/css/select2.min.css')}}">
     <link rel="stylesheet" href="{{asset('admin/plugins/summernote/summernote.min.css')}}">
     <link rel="stylesheet" href="{{asset('admin/css/custom.css')}}">
+    <link rel="icon" type="image/png" href="{{asset('assets/img/ayurved/maha-512.png')}}">
     <meta name="csrf-token" content="{{csrf_token()}}">
 </head>
 

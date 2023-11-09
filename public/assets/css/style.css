@@ -4701,11 +4701,13 @@ select {
   border-radius: 0;
   overflow: hidden;
   transition: 0.4s;
+  border-radius: 10px;
 }
 
 .product-card.style4 .product-img img {
   border-radius: 0;
   transition: 0.4s;
+  border-radius: 10px;
 }
 
 .product-card.style4 .product-info-wrap {

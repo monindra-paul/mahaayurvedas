@@ -187,7 +187,7 @@
                 </div>
                 <div class="col-xxl-6 col-xl-5 col-lg-6 order-xxl-2 order-xl-2 order-lg-2 order-md-1 order-1">
                     <div class="hw-img-wrap">
-                        <img src="assets/img/service/service-img-2.png" alt="Image">
+                        <img src="assets/img/ayurved/speciality.png" alt="Image">
                     </div>
                 </div>
             </div>
