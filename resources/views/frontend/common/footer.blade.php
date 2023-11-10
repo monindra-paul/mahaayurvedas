@@ -27,7 +27,7 @@
                             </a>
                         </li>
                         <li>
-                            <a target="_blank" href="https://instagram.com">
+                            <a target="_blank" href="https://www.instagram.com/mahaayurvedas/">
                                 <i class="ri-instagram-line"></i>
                             </a>
                         </li>

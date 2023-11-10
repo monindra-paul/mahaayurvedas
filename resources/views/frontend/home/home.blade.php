@@ -295,8 +295,7 @@
                         <li>
                             <img src="assets/img/about/arrow-2.png" alt="Image" class="bn-shape-arrow">
                             <img src=" assets/img/about/shape-2.png" alt="Image" class="bn-shape">
-                            <i class="fa-light fa-bacterium" style="color: current;"></i>
-                        </li>
+                            <i class="fa-regular fa-circle-exclamation" style="color:current;"></i>                        </li>
                         <li>
                             <img src="assets/img/about/arrow-3.png" alt="Image" class="bn-shape-arrow">
                             <img src=" assets/img/about/shape-3.png" alt="Image" class="bn-shape">
@@ -338,6 +337,30 @@
     </div>
 </section>
 
+<div class="container">
+    <div class="row ">
+        <div class="col-md-12">
+            
+            <div class="sidebar"> 
+                                    
+                <div class="sidebar-widget contact-widget">
+                              
+                    <h3> 
+                        {{-- <span>
+                        <i class="fa-solid fa-cart-shopping" style="color: #fcfcfc;"></i>
+                    </span> --}}
+                       
+                        Upload Your Prescription</h3>
+                    <p>Upload your prescription to get your medicine as per your need at low cost.</p>
+                    <span>
+                        <i class="fa-solid fa-cart-shopping fa-2xl" style="color: #fcfcfc; position:absolute; right:50px"></i>
+                    </span>
+                    <a href="https://api.whatsapp.com/send?phone=919836432543" target="_blank"  class="btn style1">Upload Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <!-- About Section Start -->
@@ -592,7 +615,19 @@
                                     @endif
                             </select>                            
                         </div>
-
+                        <div class="form-group">
+                            @if ($errors->has('language'))
+                            <span class="text-danger">{{ $errors->first('language') }}</span>
+                            @endif                            
+                            <select class="form-select form-select-md" name="language" id="language" aria-label=".form-select-md example">
+                                <option selected >Select Your Prefarable Language</option>
+                                
+                                        <option value="Bengali">Bengali</option>                             
+                                        <option value="Hindi">Hindi</option>                             
+                                        <option value="English">English</option>                             
+                                   
+                            </select>                            
+                        </div>
                         @if ($errors->has('email'))
                         <span class="text-danger">{{ $errors->first('email') }}</span>
                         @endif
@@ -622,7 +657,7 @@
                         </div>
 
                         <div class="form-group">
-                            <input type="text" name="message" id="message" placeholder="Subject">
+                            <input type="text" name="message" id="message" placeholder="Your Problem">
                         </div>
                         <div class="form-group">
                             @if(session('success'))
@@ -692,40 +727,17 @@
         <div class="blog-slider-one owl-carousel">
             <div class="blog-card style2">
                 <div class="blog-img">
-                    <img src="assets/img/blog/blog-1.jpg" alt="Image">
+                    <img src="{{asset('assets/img/ayurved/blog1.jpeg')}}" alt="Image">
                 </div>
                 <div class="blog-info">
                     <ul class="blog-metainfo  list-style">
-                        <li><i class="ri-calendar-2-line"></i><a href="posts-by-date.html">22 Jun, 2022</a></li>
-                        <li><i class="ri-chat-3-line"></i>No Comment</li>
+                        <li><i class="ri-calendar-2-line"></i><a href="#">22 Jun, 2022</a></li>
+                        {{-- <li><i class="ri-chat-3-line"></i>No Comment</li> --}}
                     </ul>
                     <h3><a href="blog-details-right-sidebar.html">How Do I Access A Medical  Cannabis Prescription</a></h3>
                 </div>
             </div>
-            <div class="blog-card style2">
-                <div class="blog-img">
-                    <img src="assets/img/blog/blog-2.jpg" alt="Image">
-                </div>
-                <div class="blog-info">
-                    <ul class="blog-metainfo  list-style">
-                        <li><i class="ri-calendar-2-line"></i><a href="posts-by-date.html">15 Jun, 2022</a></li>
-                        <li><i class="ri-chat-3-line"></i>No Comment</li>
-                    </ul>
-                    <h3><a href="blog-details-right-sidebar.html">The Use Of Medical Cannabis In  Improving Symptoms</a></h3>
-                </div>
-            </div>
-            <div class="blog-card style2">
-                <div class="blog-img">
-                    <img src="assets/img/blog/blog-3.jpg" alt="Image">
-                </div>
-                <div class="blog-info">
-                    <ul class="blog-metainfo  list-style">
-                        <li><i class="ri-calendar-2-line"></i><a href="posts-by-date.html">16 May, 2022</a></li>
-                        <li><i class="ri-chat-3-line"></i>No Comment</li>
-                    </ul>
-                    <h3><a href="blog-details-right-sidebar.html">A Guide For A More Natural And  Sustainable Beauty Routine</a></h3>
-                </div>
-            </div>
+          
         </div>
     </div>
 </section>

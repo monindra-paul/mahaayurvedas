@@ -76,6 +76,14 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="mb-3">
+                                    <label for="language">Prefarable Language</label>
+                                    <input type="text" readonly name="language" id="language" value="{{ $appoinments->language }}" class="form-control"
+                                        placeholder="Language">
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="mb-3">
                                     <label for="address">Address</label>
                                     <input type="text" readonly name="address" id="address" value="{{ $appoinments->address }}" class="form-control"
                                         placeholder="Address">

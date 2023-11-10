@@ -1835,6 +1835,7 @@ select {
 .contact-widget {
   background-color: #024E32;
   padding: 25px 30px 30px;
+  border-radius: 10px;
 }
 
 .contact-widget h3 {

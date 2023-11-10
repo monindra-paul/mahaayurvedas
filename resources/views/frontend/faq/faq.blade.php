@@ -11,7 +11,7 @@
             <div class="breadcrumb-title">
                 <h2>Frequently Asked Questions</h2>
                 <ul class="breadcrumb-menu list-style">
-                    <li><a href="index.html">Home </a></li>
+                    <li><a href="{{url('/')}}">Home </a></li>
                     <li>FAQ</li>
                 </ul>
             </div>
@@ -34,14 +34,14 @@
                                         <i class="flaticon-plus plus"></i>
                                         <i class="flaticon-minus-sign"></i>
                                     </span>
-                                   Planning can help alleviate workplace stress and increase productivity?
+                                  How to Book an Appointment & Payment?
                                 </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show"
                                 aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <div class="single-product-text">
-                                         <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure.</p>
+                                         <p>Click on the Book an Appointment option in menu or directly click on the home page button, after click please fill the form with your valid data & submit the form. After submitting the form we will call you or whatsapp you as your given mobile number, there have your details and a UPI Id, please pay the requested ammout to confirm your booking. After payment please share the payment screenshot or the transection id to the Maha Ayurvedas whatsapp.</p>
                                     </div>
                                 </div>
                             </div>
@@ -55,13 +55,13 @@
                                         <i class="flaticon-plus plus"></i>
                                         <i class="flaticon-minus-sign"></i>
                                     </span>
-                                    Understand Your Problem, You must understand the issue?
+                                    How to get door step medicine?
                                 </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse "
                                 aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure.</p>
+                                    <p>Every product has a reach us button which land you directly to our whatsapp number. Order there any product with your name, mobile number and your full address at one click . The product has send to you through our courier partner or by the Indian Post</p>
                                 </div>
                             </div>
                         </div>
@@ -74,13 +74,53 @@
                                         <i class="flaticon-plus plus"></i>
                                         <i class="flaticon-minus-sign"></i>
                                     </span>
-                                    Those who experiment the most, are able to innovate the best?
+                                    Our Partners
                                 </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse"
                                 aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure.</p>
+                                    <p>We have a highly qualified doctors.</p>
+                                    <ul><b><u>Our Doctors</u></b>
+                                        <li>
+                                            Dr. Niladri Bose
+                                        </li>
+                                        <li>
+                                            Dr. Abhishek Chakraborty
+                                        </li>
+                                        <li>
+                                            Dr. SANGEETA MAITY
+                                        </li>
+                                    </ul>
+                                    <ul><b><u>Pharmacist</u></b>
+                                        <li>
+                                            Mr. Rahul Sardar (D.Pharm)
+                                        </li>
+                                        
+                                    </ul>
+                                    <ul><b><u>Adviser</u></b>
+                                        <li>
+                                            Mr. Joydeb Adhikary
+                                        </li>
+                                        
+                                    </ul>
+                                    <ul><b><u>Partners</u></b>
+                                        <li>
+                                           <b> Dhanalaxmi Ayurved: </b> Mr. Sambhu Sarkar
+                                        </li>
+                                        <li>
+                                           <b> Maha Debarghya Ayurved: </b> Mr. Ashis Das
+                                        </li>                                        
+                                    </ul>
+                                    <ul><b><u>Technical Support</u></b>
+                                        <li>
+                                           <b> Graphic Designer: </b> Mr. Shubham Paul
+                                        </li>
+                                        <li>
+                                           <b> Website Developmet: </b> Mr. Monindra Paul
+                                        </li>                                        
+                                    </ul>
+                                    
                                 </div>
                             </div>
                         </div>
