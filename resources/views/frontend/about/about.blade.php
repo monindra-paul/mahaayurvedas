@@ -320,8 +320,8 @@
                             <img src="{{asset('assets/img/ayurved/re-pic.webp')}}" alt="Image">
                         </div>
                         <div class="client-info">
-                            <h3>Tom Haris</h3>
-                            <span>Engineer, Olleo</span>
+                            <h3>Sanat Kr. Ghosh</h3>
+                            <span>Baduria, North 24 PGS</span>
                         </div>
                     </div>
                     <div class="quote-icon">

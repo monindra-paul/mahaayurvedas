@@ -140,7 +140,7 @@ function appdate(date) {
         var email = "{{$appoinments->email}}";
         var address = "{{$appoinments->address}}";
         var date = "{{$appoinments->date}}";
-        var upi = "monindrap@fbl";
+        var upi = "mahaayurvedas@kotak";
        
 
         // var name = document.getElementById('name').value;

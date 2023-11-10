@@ -83,7 +83,8 @@
             <div class="hero-content">
                 <h1 data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">Welcome to <br><span><img src="{{asset('assets/img/ayurved/maha-ayurvedas.png')}}" alt="" srcset=""></span></h1>
                 <p data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300" style="font-size:20px;">We are here to treat your diseases with the help of Indian traditional system of medicine.</p>
-                <a href="{{url('/shop')}}" class="btn style1" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">Shop Now</a>
+                <a href="{{url('/book-appointment')}}" class="btn style1" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">Book an Appointment</a>
+                <a href="{{url('/shop')}}" class="btn style1" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">Visit Store Now</a>
             </div>
            </div>
        </div>
@@ -355,7 +356,7 @@
                     <span>
                         <i class="fa-solid fa-cart-shopping fa-2xl" style="color: #fcfcfc; position:absolute; right:50px"></i>
                     </span>
-                    <a href="https://api.whatsapp.com/send?phone=919836432543" target="_blank"  class="btn style1">Upload Now</a>
+                    <a href="https://api.whatsapp.com/send?phone=919775953377" target="_blank"  class="btn style1">Upload Now</a>
                 </div>
             </div>
         </div>
@@ -734,7 +735,7 @@
                         <li><i class="ri-calendar-2-line"></i><a href="#">22 Jun, 2022</a></li>
                         {{-- <li><i class="ri-chat-3-line"></i>No Comment</li> --}}
                     </ul>
-                    <h3><a href="blog-details-right-sidebar.html">How Do I Access A Medical  Cannabis Prescription</a></h3>
+                    <h3><a href="blog-details-right-sidebar.html"></a></h3>
                 </div>
             </div>
           
@@ -794,8 +795,8 @@
                             <img src="{{asset('assets/img/ayurved/re-pic.webp')}}" alt="Image">
                         </div>
                         <div class="client-info">
-                            <h3>Tom Haris</h3>
-                            <span>Engineer, Olleo</span>
+                            <h3>Sanat Kr. Ghosh</h3>
+                            <span>Baduria, North 24 PGS</span>
                         </div>
                     </div>
                     <div class="quote-icon">

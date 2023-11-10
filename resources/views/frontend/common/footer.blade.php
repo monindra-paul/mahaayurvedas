@@ -102,7 +102,7 @@
                         <li>
                             <i class="flaticon-call-1"></i>
                             <h6>Phone</h6>
-                            <a href="tel:+9198364 32543">+91 98364 32543</a>
+                            <a href="tel:+919775953377">+91 9775953377</a>
                         </li>
                         <li>
                             <i class="flaticon-pin"></i>
