@@ -100,7 +100,7 @@
                                     </span>
                                 </div>
                             </div> --}}
-                            <a href="https://api.whatsapp.com/send?phone=917001639863" target="_blank" class="btn style1 add-to-cart">Reach Us</a>
+                            <a href="https://api.whatsapp.com/send?phone=918918699584" target="_blank" class="btn style1 add-to-cart">Reach Us</a>
                         </div>
                     </div>
                 </div>

@@ -21,6 +21,16 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <title>Maha Ayurvedas | The exceptional ayurveda platform for everyone</title>
         <link rel="icon" type="image/png" href="{{asset('assets/img/ayurved/maha-512.png')}}">
+        <style>
+            .modal{
+                border: 4px solid #f00;
+            }
+            .modal-backdrop
+            {
+                opacity:0.9 !important;
+            }
+            .sidebarItem .social a {text-decoration: none;vertical-align: middle;text-align: center;line-height: 3;}.sidebarItem .social a p {color: white;margin: 0px;font-weight: 600;}.sidebarItem {height: auto;width: 0px;position: fixed;text-align: center;top: 35vh;padding: 150px;z-index: 1001;}.sidebarItem p .bi {left: 45px;position: relative;vertical-align: middle;text-align: center;}.sidebarItem p img {left: 40px;position: relative;vertical-align: middle;}.sidebarItem .social {margin-left: -200px;width: 230px;padding: 0;display: inline-table;height: 0px;background-color: rgba(128, 128, 128, 0.73);-moz-transition-property: margin-left;-moz-transition-duration: 0.2s;-moz-transition-delay: 0.2s;-ms-transition-property: margin-left;-ms-transition-duration: 0.2s;-ms-transition-delay: 0.2s;-o-transition-property: margin-left;-o-transition-duration: 0.2s;-o-transition-delay: 0.2s;-webkit-transition-property: margin-left;-webkit-transition-duration: 0.2s;-webkit-transition-delay: 0.2s;box-shadow: 0px 0px 6px 0px #3E3D3D;cursor: pointer;}.sidebarItem .social:hover {margin-left: -10px;width: 230px;}.sidebarItem .social.emergency {background-color: #f00;padding: 15px 0;}.sidebarItem .social.whatsapp {background-color: #26d367;}.sidebarItem .social.call {background-color: #184f34;}
+        </style>
     </head>
 
     <body>

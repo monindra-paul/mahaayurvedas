@@ -10,81 +10,85 @@ use Illuminate\Http\Request;
 
 class ShopController extends Controller
 {
-    public function index(Request $request, $categorySlug = null){
+    public function index(Request $request, $categorySlug = null)
+    {
+
 
         $categorySelected = "";
 
-       $categories = Category::orderBy('name','ASC')->where('status',1)->get();
+        $categories = Category::orderBy('name', 'ASC')->where('status', 1)->get();
 
-       $brands = Brand::orderBy('name','ASC')->where('status',1)->get();
-
-
-       $products = Product::where('status',1);
-       //filters
+        $brands = Brand::orderBy('name', 'ASC')->where('status', 1)->get();
 
 
-       if(!empty($request->get('search'))){
-        $products = $products->where('title', 'like','%'.$request->get('search').'%');
-       }
+        $products = Product::where('status', 1);
+        //filters
+
+
+
 
         //category
 
-       if(!empty($categorySlug)){
-        $category = Category::where('slug',$categorySlug)->first();
-        $products = $products->where('category_id',$category->id);
-        $categorySelected = $category->id;
-       }
+        if (!empty($categorySlug)) {
+            $category = Category::where('slug', $categorySlug)->first();
+            $products = $products->where('category_id', $category->id);
+            $categorySelected = $category->id;
+        }
 
 
-       //sub category
+        //sub category
 
-    //    if(!empty($subCategorySlug)){
-    //     $subCategory = SubCategory::where('slug',$subCategorySlug)->first();
-    //     $products = $products->where('sub_category_id',$subCategory->id);
-    //     $categorySelected = $category->id;
-    //    }
-
-
-    //    $products = Product::orderBy('id','DESC')->where('status',1)->get();
+        //    if(!empty($subCategorySlug)){
+        //     $subCategory = SubCategory::where('slug',$subCategorySlug)->first();
+        //     $products = $products->where('sub_category_id',$subCategory->id);
+        //     $categorySelected = $category->id;
+        //    }
 
 
-
-        $products = $products->orderBy('id','DESC');
-        $products = $products->paginate(10);
+        //    $products = Product::orderBy('id','DESC')->where('status',1)->get();
 
 
-       $data['categories'] = $categories;
-       $data['brands'] = $brands;
-       $data['products'] = $products;
-       $data['categorySelected'] = $categorySelected;
 
-        return view('frontend.shop.shop',$data);
+        if (!empty($request->get('keyword'))) {
+            $products =  $products->where('title', 'like', '%' . $request->get('keyword') . '%');
+        }
+        $products = $products->orderBy('id', 'DESC');
+        $products = $products->paginate(50);
+
+
+        $data['categories'] = $categories;
+        $data['brands'] = $brands;
+        $data['products'] = $products;
+        $data['categorySelected'] = $categorySelected;
+
+        return view('frontend.shop.shop', $data);
     }
 
 
-    public function product($slug){
+    public function product($slug)
+    {
         // echo $slug;
-        $product = Product::where('slug',$slug)->with('product_images')->first();
+        $product = Product::where('slug', $slug)->with('product_images')->first();
 
-        if($product == null){
+        if ($product == null) {
             abort(404);
         }
-        
 
 
-          //fetch releted products
-          $relatedProducts = [];
 
-          if($product->related_products != ""){
-              $productArray = explode(',',$product->related_products);
-              $relatedProducts = Product::whereIn('id',$productArray)->get();
-          }
+        //fetch releted products
+        $relatedProducts = [];
+
+        if ($product->related_products != "") {
+            $productArray = explode(',', $product->related_products);
+            $relatedProducts = Product::whereIn('id', $productArray)->get();
+        }
 
 
         $data['product'] = $product;
         $data['relatedProducts'] = $relatedProducts;
 
 
-        return view('frontend.product.product',$data);
+        return view('frontend.product.product', $data);
     }
 }

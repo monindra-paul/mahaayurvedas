@@ -27,6 +27,7 @@ class AppoinmentController extends Controller
             'mobile'=>'required',
             'age'=>'required',
             'doctor'=>'required',
+            'language'=>'required',
             'date'=>'required',
             'address'=>'required',
             'message'=>'required'
@@ -45,6 +46,7 @@ class AppoinmentController extends Controller
             'mobile' => $request->mobile,
             'age' => $request->age,
             'doctor' => $request->doctor,
+            'language' => $request->language,
             'date' => $request->date,
             'address' => $request->address,
             'message' => $request->message,

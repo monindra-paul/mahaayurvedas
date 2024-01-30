@@ -76,6 +76,14 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="mb-3">
+                                    <label for="language">Prefarable Language</label>
+                                    <input type="text" readonly name="language" id="language" value="{{ $appoinments->language }}" class="form-control"
+                                        placeholder="Language">
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="mb-3">
                                     <label for="address">Address</label>
                                     <input type="text" readonly name="address" id="address" value="{{ $appoinments->address }}" class="form-control"
                                         placeholder="Address">
@@ -132,7 +140,7 @@ function appdate(date) {
         var email = "{{$appoinments->email}}";
         var address = "{{$appoinments->address}}";
         var date = "{{$appoinments->date}}";
-        var upi = "monindrap@fbl";
+        var upi = "mahaayurvedas@kotak";
        
 
         // var name = document.getElementById('name').value;

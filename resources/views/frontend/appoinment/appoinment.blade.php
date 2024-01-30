@@ -51,13 +51,26 @@
                             @if ($errors->has('doctor'))
                             <span class="text-danger">{{ $errors->first('doctor') }}</span>
                             @endif                            
-                            <select class="form-select form-select-md" name="doctor" id="doctor" aria-label=".form-select-sm example">
+                            <select class="form-select form-select-md" name="doctor" id="doctor" aria-label=".form-select-md example">
                                 <option selected >Select Doctor</option>
                                  @if(!empty($doctors))
                                      @foreach($doctors as $doctor)
                                         <option value="{{$doctor->name}}">{{$doctor->name}}</option>                             
                                     @endforeach
                                  @endif
+                            </select>                            
+                        </div>
+                        <div class="form-group">
+                            @if ($errors->has('language'))
+                            <span class="text-danger">{{ $errors->first('language') }}</span>
+                            @endif                            
+                            <select class="form-select form-select-md" name="language" id="language" aria-label=".form-select-md example">
+                                <option selected >Select Your Prefarable Language</option>
+                                
+                                        <option value="Bengali">Bengali</option>                             
+                                        <option value="Hindi">Hindi</option>                             
+                                        <option value="English">English</option>                             
+                                   
                             </select>                            
                         </div>
 
@@ -83,7 +96,7 @@
                             <input type="text" name="address" id="address" placeholder="Address">
                         </div>
                         <div class="form-group">
-                            <input type="text" name="message" id="message" placeholder="Subject">
+                            <input type="text" name="message" id="message" placeholder="Your Problem">
                         </div>
                         <div class="form-group">
                             @if(session('success'))
